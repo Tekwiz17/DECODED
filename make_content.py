@@ -40,6 +40,46 @@ add('proteins','Protein shape → protein job','Follow a chain from amino acids 
 ['Denaturation: losing the useful shape','Heat or extreme pH can disrupt interactions that stabilize a protein’s shape. This can change an active site or other functional region and reduce function. Typical denaturation leaves the peptide backbone and amino acid sequence intact. Some proteins can refold; others cannot under those conditions.']],
 'Denaturation usually changes folding, not primary sequence. Hydrophobic interactions are not covalent bonds, and ordinary heating does not necessarily break disulfide bonds.',
 'Cooking an egg changes how albumin and other proteins fold and interact. The egg white becomes opaque and firm. Cooling it does not simply turn it back into raw egg white.','protein')
+# Keep the reading level around ninth grade without dropping the class vocabulary.
+simple_parts = {
+'water': [
+('Start with an uneven pull', 'Water is H₂O: two hydrogen atoms and one oxygen atom. The atoms share electrons, but oxygen pulls harder. This makes the oxygen end slightly negative and the hydrogen ends slightly positive. A molecule with this uneven charge is polar. The whole water molecule is still neutral.'),
+('Why water sticks to water', 'The slightly positive H end of one water molecule attracts the slightly negative O end of another. This attraction is a hydrogen bond. The bonds inside one water molecule are different: they are polar covalent bonds, where atoms share electrons.'),
+('Cohesion or adhesion?', 'Cohesion means water sticks to water. It helps a drop hold together and creates surface tension. Adhesion means water sticks to another surface, such as glass or the inside of a plant tube. Together, these attractions help water move through narrow spaces.'),
+('Water slows temperature changes', 'Water can absorb a lot of heat before its temperature rises much. This helps bodies and lakes avoid sudden temperature changes. When water evaporates, it takes heat away. That is how sweat helps cool you.'),
+('Why some things dissolve—and ice floats', 'Water surrounds many ions and polar molecules, helping them dissolve. Oil is mostly nonpolar, so it does not mix well with water. When water freezes, its molecules form a more open pattern. Ice is less dense than liquid water, so it floats. A layer of ice can help insulate water below.')],
+'ph': [
+('Read the pH scale', 'pH tells us about hydrogen ions, written H⁺, in a solution. At about 25°C, a pH below 7 is acidic, 7 is neutral, and above 7 is basic. Acids increase H⁺ in water. Bases reduce H⁺, often by accepting it or releasing OH⁻. Remember: lower pH means more H⁺.'),
+('One step means ten times', 'pH 3 has ten times more H⁺ than pH 4. It has 100 times more H⁺ than pH 5. For each step downward, multiply by 10. A two-step change means 10 × 10, not 2 ×.'),
+('Why living things care', 'Proteins need suitable conditions to work. A big pH change can change a protein’s shape and job. A buffer helps resist pH changes by taking up or releasing H⁺. A buffer does not always make a solution neutral.'),
+('Use indicators to find clues', 'An indicator changes color in certain conditions. Litmus helps test acids and bases. Phenolphthalein turns pink in a basic solution. Iodine turns blue-black with starch. Benedict’s solution tests for reducing sugars such as glucose and needs heat. Bromothymol blue responds to pH; adding dissolved CO₂ can lower pH and turn it toward yellow. Compare tests with known positive and negative controls.')],
+'building': [
+('Blocks and chains', 'A monomer is one small building block. A polymer is a chain of repeating blocks. Sugars can build large carbohydrates. Amino acids build protein chains. Nucleotides build DNA and RNA. Lipids are a special case: they are not true chains of repeating monomers.'),
+('Build a link: water comes out', 'Dehydration synthesis joins building blocks with a covalent bond. In the simple model, one block gives an H and another gives an OH. Together they form H₂O, which is released. Think: build a link, water out.'),
+('Break a link: water goes in', 'Hydrolysis uses water to break a bond. Hydro means water; lysis means splitting. The pieces gain H and OH from water. Digestion uses this process to break large food molecules into smaller pieces the body can absorb. Think: split a link, water in.'),
+('Count the links', 'A straight chain of five blocks has four links. In the simple dehydration model, building those four links releases four water molecules. Breaking all four links uses four water molecules. For one straight chain, links = blocks − 1.')],
+'molecules': [
+('Carbohydrates: sugars and chains', 'Glucose is a monosaccharide: one sugar unit. Two joined sugars make a disaccharide. Many make a polysaccharide. Plants store glucose as starch. Animals store it as glycogen. Cellulose helps support plant cell walls. Many carbohydrates have about twice as many hydrogen atoms as oxygen atoms, but this is not a rule for every carbohydrate.'),
+('Lipids: fats and more', 'Lipids include fats, oils, phospholipids, and steroids. Fats store energy, provide insulation, and cushion organs. A triglyceride is made of glycerol and three fatty acids. Phospholipids help build cell membranes. Lipids are mostly nonpolar, so they do not mix well with water.'),
+('Straight tails or bent tails?', 'Saturated fatty acids have no carbon–carbon double bonds. Their straighter tails can pack closely. Cis unsaturated fatty acids have double bonds that bend the tails. The bends make tight packing harder, so the fat is often more fluid. Trans fats have straighter double-bond arrangements than cis fats.'),
+('Proteins: many different jobs', 'Proteins can speed reactions, carry materials, send signals, and give support. Their building blocks are amino acids. Each amino acid has a central carbon attached to an amino group, a carboxyl group, a hydrogen, and an R group. The R group is the part that differs among amino acids.'),
+('Nucleic acids: instructions', 'DNA and RNA are nucleic acids. Their building blocks are nucleotides. Each nucleotide has a sugar, a phosphate group, and a base. DNA stores inherited information. RNA helps cells use that information, including when making proteins.')],
+'proteins': [
+('Primary: the order of the beads', 'Picture amino acids as beads on a string. Primary structure is their order. Peptide bonds connect them. Each peptide bond joins the carboxyl group of one amino acid to the amino group of another. A change in order can affect folding, but does not always change the protein’s job.'),
+('Secondary: small folds', 'Parts of the chain can form coils called alpha helices or folded patterns called beta sheets. Hydrogen bonds between backbone groups help hold these shapes. These bonds involve the backbone, not the R groups.'),
+('Tertiary: one chain’s whole shape', 'One protein chain folds into an overall 3D shape. R groups help control the fold. They can form hydrogen bonds, ionic attractions, and disulfide bridges. Nonpolar R groups often gather away from water. A disulfide bridge is a strong covalent link between two cysteines.'),
+('Quaternary: a team of chains', 'Some proteins need two or more folded chains to work together. Their arrangement is quaternary structure. Hemoglobin is one example. A protein with only one chain does not have this level.'),
+('Denaturation: shape changes, job changes', 'Heat or extreme pH can disturb a protein’s shape. This is denaturation. If the shape changes, the protein may stop doing its job. The amino acid order usually stays intact because the peptide bonds usually remain. Some proteins can refold, but others cannot under those conditions.')]
+}
+for u in units:
+ u['parts'] = simple_parts[u['id']]
+ u['trap'] = {
+ 'water': 'Hydrogen bonds attract different water molecules. Covalent bonds hold the atoms together inside one molecule. Water does not dissolve everything.',
+ 'ph': 'A lower pH means more H⁺. Bromothymol blue measures pH directly, so a color change does not prove CO₂ was the only cause.',
+ 'building': 'Joining releases water; splitting uses water. Lipids are not true repeating-block polymers.',
+ 'molecules': 'Each family can have more than one job. Carbohydrates are not just fuel, and proteins are not just muscle.',
+ 'proteins': 'Unfolding a chain is different from cutting it. Denaturation usually changes the fold, not the order of amino acids.'
+ }[u['id']]
 qs=[]
 def q(t,p,opts,a,why):qs.append(dict(topic=t,prompt=p,options=opts,answer=a,why=why))
 q('water','Which statement best explains water’s polarity?',['Oxygen attracts shared electrons more strongly than hydrogen.','Water has an overall negative charge.','Hydrogen bonds hold the O and H atoms together inside water.','Water contains ions instead of atoms.'],0,'Unequal electron sharing creates partial charges. Water is neutral overall, with polar covalent O–H bonds.')

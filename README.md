@@ -1,10 +1,10 @@
 # Bio, decoded
 
-An interactive Biology A study website starting with Unit 2. Built for students who want the ideas explained clearly, with examples and practice.
+An interactive Biology A study website starting with Unit 2. Written for ninth-grade students taking Biology A a year ahead, with short explanations, examples, and practice.
 
 ## Included
 - Five sections matching the supplied notes: water, pH/indicators, synthesis/hydrolysis, molecule families, and protein structure.
-- Five interactive models, 30 flashcards, and 16 original practice questions.
+- Five animated models with smooth transitions, motion controls, and reduced-motion support, 30 flashcards, and 16 original practice questions.
 - Additional topics will be added only as new class notes are provided.
 - Topic filters, learn-as-you-go practice, test mode, missed-question review, and browser-local progress.
 - Responsive layout, semantic controls, keyboard-friendly flashcards, and reduced-motion support.
@@ -12,7 +12,7 @@ An interactive Biology A study website starting with Unit 2. Built for students 
 ## Run
 Serve `dist` with any static web server, for example `python3 -m http.server 8000 --directory dist`, then open localhost:8000. No build, API keys, accounts, or paid services required.
 
-Edit `dist/content.js` for lesson, card, and question data; `dist/app.js` for interactions; `dist/style.css` for appearance. `make_content.py` regenerates content.js. `node check.cjs` runs data integrity and application-flow checks with a minimal DOM harness. Browser visual QA should also be performed when available.
+Edit `dist/content.js` for lesson, card, and question data; `dist/app.js` for study interactions; `dist/models.js` for animated SVG models; `dist/style.css` for appearance. `make_content.py` regenerates content.js. `node check.cjs` runs data integrity and application-flow checks with a minimal DOM harness. Browser visual QA should also be performed when available.
 
 ## Scope and references
 Unit 2 topic selection came from a user-supplied notes video. The video and worksheet scans are not included. Explanations, diagrams, and practice items are original; this is an independent study aid, not an official NYSED course or exam.
