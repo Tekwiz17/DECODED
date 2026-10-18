@@ -57,3 +57,6 @@ Navigation follows the four uploaded files in order: radicals/right triangles; q
 
 ## Daily lessons and construction teaching
 Geometry unit/day counts follow the four uploaded packet groups: 5, 4, 5, and 7. Construction Studio covers segment copies, midpoints/perpendicular bisectors, angle copies, angle bisectors, incircles, both parallel-line methods, perpendiculars from points on/off a line, and circumcircles. Tutorials reveal exact geometric diagrams with previous/next steps, replay, reasons, and a paper-practice checklist. Regenerate all course outputs with `python make_geometry.py`, `python make_terms.py`, then `node make_catalog.cjs`.
+
+## Minimal interface
+The shell has Learn, Study, Progress, and Settings. One compact toolbar selects subject, unit, and reading level. The home and lesson list omit decorative banners, duplicate shortcuts, and quest sidebars. Byte tips and character motion are controlled in Settings. A replayable four-step tutorial includes course selection, reading-level previews, and a term-card demo; completing it does not award XP or mark lessons complete.
