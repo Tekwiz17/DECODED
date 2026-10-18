@@ -4,14 +4,14 @@
 
 Small lessons, big lightbulb moments. DECODED turns our class notes into a playful learning path with Byte, an animated computer study buddy.
 
-Currently available: **Biology → Unit 2 → Chemistry of life**. No other classes, units, or enzyme extension are included. More can be added as new notes arrive.
+Currently available: **Biology → Unit 2 → Chemistry of life** and **Geometry A (Regents) → Units 1–4**. Future material is added only as class notes arrive. The subject and unit selectors remain available across lessons and tools.
 
 ## What you can do
 - Follow five guided lessons: water, pH and indicators, building/breaking molecules, molecule families, and protein structure.
 - Read one idea at a time, explore an animated model, and answer practice questions with explanations.
 - Earn 20 XP the first time you finish each topic, plus 10 XP for a practice set once per local day.
 - Set a daily XP goal, build a study streak, and earn simple achievement badges. No lives, timers, or punishment for wrong answers.
-- Use 30 flashcards, missed-question review, and 16 original practice questions.
+- Biology has 30 flashcards and 16 original practice questions. Geometry adds 16 guided lessons, 49 flashcards, 48 original practice questions, and 11 interactive SVG models. Review queues and practice sets follow the selected unit.
 - Sign in with ChatGPT to save private progress across devices, or keep learning as a guest with browser-local saves.
 
 ## Development
@@ -21,7 +21,11 @@ Uses the Sites Vinext starter with Cloudflare D1 and Drizzle. Node 22.13+ is req
 - `public/decoded.js`: learning path, Byte SVG, lesson loop, XP, goals, streaks, and account synchronization
 - `public/app.js`: notes, flashcards, practice, and progress integration
 - `public/models.js`: animated SVG models with pause and reduced-motion support
-- `public/content.js`: current class content; regenerate with `python make_content.py`
+- `public/content.js`: Biology content; regenerate with `python make_content.py`
+- `public/geometry-content.js`: Geometry packet content and all three reading levels; regenerate with `python make_geometry.py`
+- `public/catalog.js`: subject/unit navigation and stable course identities
+- `public/geometry-models.js`: mathematical SVG models, smooth transitions, pause, and reduced motion
+- `lib/course-catalog.json`: server validation bounds; regenerate with `node make_catalog.cjs` after content changes
 - `app/api/progress/route.ts`: authenticated per-user progress API, validation, same-origin writes, optimistic concurrency
 - `lib/progress.ts`, `db/schema.ts`, `drizzle/`: validation and schema-only migrations
 - `app/globals.css`: responsive visual design
@@ -47,3 +51,6 @@ The shared reading setting applies across the app and is saved with account prog
 `public/study.js` adds a toolbox, searchable 24-term glossary, eight-example molecule sorting activity, a personalized next-step card on the home page, and a review queue. The queue prioritizes currently missed questions and scheduled flashcards. “Got it” schedules a card in 1, 3, 7, then 14 days; “Still learning” makes it due today. Same-day successful repeats do not inflate the interval. Scheduling uses the device’s local date and is a study aid, not a mastery score.
 
 Guided lessons checkpoint their current step, question order, selection, and revealed feedback. Resume returns to that state, including after a refresh. Completed lessons clear the checkpoint. Signed-in learners’ review schedule and checkpoint use the existing private progress record; guests keep them locally. Sorting awards 10 XP once per local day, independently of the existing practice reward. It is keyboard/tap friendly and requires no dragging. All tools stay within the current Biology Unit 2 notes.
+
+## Geometry packet scope
+Navigation follows the four uploaded files in order: radicals/right triangles; quadratics/systems; coordinates/segments; angles/lines/constructions. The third and fourth packets print Unit 2 and Unit 3 respectively; this difference is disclosed on those learning paths and in About. No later Geometry material is included. Original PDFs are not committed or hosted. Existing Biology question/card indices are preserved, and new subjects append content rather than renumbering saved progress.
