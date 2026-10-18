@@ -1,2 +1,30 @@
-const ids=new Set(['water','ph','building','molecules','proteins']);
-export function cleanProgress(p:unknown){if(!p||typeof p!=='object'||Array.isArray(p))return null;const x=p as Record<string,unknown>;const list=(v:unknown,max:number)=>Array.isArray(v)?[...new Set(v.filter(n=>Number.isInteger(n)&&Number(n)>=0&&Number(n)<max))]:[];const done=Array.isArray(x.done)?[...new Set(x.done.filter(n=>typeof n==='string'&&ids.has(n)))]:[];const dates=Array.isArray(x.days)?[...new Set(x.days.filter(d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)))].sort().slice(-366):[];return {readingLevel:['easy','medium','expert'].includes(String(x.readingLevel))?String(x.readingLevel):'medium',done,known:list(x.known,30),missed:list(x.missed,16),xp:typeof x.xp==='number'&&Number.isFinite(x.xp)?Math.max(0,Math.min(1000000,Math.floor(x.xp))):0,days:dates,goal:[10,20,30].includes(Number(x.goal))?Number(x.goal):20,daily:typeof x.daily==='number'&&Number.isFinite(x.daily)?Math.max(0,Math.min(100000,Math.floor(x.daily))):0,dailyDate:typeof x.dailyDate==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x.dailyDate)?x.dailyDate:'',awards:Array.isArray(x.awards)?[...new Set(x.awards.filter(a=>typeof a==='string'&&/^(lesson|practice):[a-z0-9-]{1,30}$/.test(a)))].slice(0,100):[]}}
+const topicQuestions:Record<string,number[]>={water:[0,1,2],ph:[3,4,5],building:[6,7,8],molecules:[9,10,11],proteins:[12,13,14,15]};
+const ids=new Set(Object.keys(topicQuestions));
+const date=(v:unknown):v is string=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v);
+const bounded=(v:unknown,max:number)=>typeof v==='number'&&Number.isFinite(v)?Math.max(0,Math.min(max,Math.floor(v))):0;
+const list=(v:unknown,max:number)=>Array.isArray(v)?[...new Set(v.filter(n=>Number.isInteger(n)&&n>=0&&n<max))]:[];
+export function cleanProgress(p:unknown){
+ if(!p||typeof p!=='object'||Array.isArray(p))return null;
+ const x=p as Record<string,unknown>;
+ const done=Array.isArray(x.done)?[...new Set(x.done.filter(n=>typeof n==='string'&&ids.has(n)))]:[];
+ const days=Array.isArray(x.days)?[...new Set(x.days.filter(date))].sort().slice(-366):[];
+ const review:Record<string,{due:string,last:string,streak:number}>={};
+ if(x.review&&typeof x.review==='object'&&!Array.isArray(x.review)){
+  for(const [id,value]of Object.entries(x.review).slice(0,30)){
+   if(!/^(?:[0-9]|[12][0-9])$/.test(id)||!value||typeof value!=='object')continue;
+   const v=value as Record<string,unknown>;
+   if(date(v.due)&&date(v.last))review[id]={due:v.due,last:v.last,streak:bounded(v.streak,4)};
+  }
+ }
+ let resume=null;
+ if(x.resume&&typeof x.resume==='object'&&!Array.isArray(x.resume)){
+  const r=x.resume as Record<string,unknown>;
+  if(typeof r.id==='string'&&ids.has(r.id)&&['learn','model','question'].includes(String(r.stage))&&Array.isArray(r.questionIds)&&r.questionIds.length>0&&r.questionIds.length<=3&&r.questionIds.every(n=>Number.isInteger(n)&&topicQuestions[r.id as string].includes(n))){
+   const partMax:Record<string,number>={water:4,ph:3,building:3,molecules:4,proteins:4};
+   const questionIds=[...new Set(r.questionIds)];
+   const selected=Number.isInteger(r.selected)&&Number(r.selected)>=0&&Number(r.selected)<4?r.selected as number:null;
+   resume={id:r.id,stage:r.stage,part:bounded(r.part,partMax[r.id]),qindex:bounded(r.qindex,questionIds.length-1),questionIds,selected,revealed:r.revealed===true&&selected!==null,firstTry:bounded(r.firstTry,3),missed:list(r.missed,16).filter(id=>topicQuestions[r.id as string].includes(id))};
+  }
+ }
+ return {review,resume,readingLevel:['easy','medium','expert'].includes(String(x.readingLevel))?String(x.readingLevel):'medium',done,known:list(x.known,30),missed:list(x.missed,16),xp:bounded(x.xp,1000000),days,goal:[10,20,30].includes(Number(x.goal))?Number(x.goal):20,daily:bounded(x.daily,100000),dailyDate:date(x.dailyDate)?x.dailyDate:'',awards:Array.isArray(x.awards)?[...new Set(x.awards.filter(a=>typeof a==='string'&&/^(lesson|practice):[a-z0-9-]{1,30}$/.test(a)))].slice(-100):[]};
+}

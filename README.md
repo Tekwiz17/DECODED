@@ -42,3 +42,8 @@ The shared reading setting applies across the app and is saved with account prog
 
 ## Byte’s study-companion behavior
 `public/byte-activity.js` adds a persistent, dismissible Byte companion. It reacts to lesson starts, model exploration, answer feedback, three-answer streaks, flashcard review, lesson completion, and daily goals. Tap Byte for encouragement. Its settings can quiet unsolicited tips or pause all Byte animations, and system reduced-motion preferences take priority. Preferences stay on the device. There is no sound, push notification system, guilt messaging, or extra XP awarded by the mascot. Model tips are throttled so sliders do not flood the screen. Messages dismiss automatically and can be closed manually.
+
+## Study toolbox and returning learners
+`public/study.js` adds a toolbox, searchable 24-term glossary, eight-example molecule sorting activity, a personalized next-step card on the home page, and a review queue. The queue prioritizes currently missed questions and scheduled flashcards. “Got it” schedules a card in 1, 3, 7, then 14 days; “Still learning” makes it due today. Same-day successful repeats do not inflate the interval. Scheduling uses the device’s local date and is a study aid, not a mastery score.
+
+Guided lessons checkpoint their current step, question order, selection, and revealed feedback. Resume returns to that state, including after a refresh. Completed lessons clear the checkpoint. Signed-in learners’ review schedule and checkpoint use the existing private progress record; guests keep them locally. Sorting awards 10 XP once per local day, independently of the existing practice reward. It is keyboard/tap friendly and requires no dragging. All tools stay within the current Biology Unit 2 notes.

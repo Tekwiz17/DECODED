@@ -1,6 +1,6 @@
 /* DECODED learning experience. Biology Unit 2 is the only released course. */
 let learner=null,syncRevision=0,syncState='Loading account…',activeKey='decoded:guest',syncTimer,uploading=false,dirty=false;
-const emptyProgress=()=>({done:[],known:[],missed:[],xp:0,days:[],daily:0,dailyDate:'',goal:20,readingLevel:'medium',awards:[]});
+const emptyProgress=()=>({done:[],known:[],missed:[],xp:0,days:[],daily:0,dailyDate:'',goal:20,readingLevel:'medium',review:{},resume:null,awards:[]});
 const normalize=p=>({...emptyProgress(),...p,readingLevel:['easy','medium','expert'].includes(p?.readingLevel)?p.readingLevel:'medium',done:p?.done||[],known:p?.known||[],missed:p?.missed||[],days:p?.days||[],awards:p?.awards||[]});
 const safeRead=k=>{try{return JSON.parse(localStorage.getItem(k)||'null')}catch{return null}};
 const today=()=>new Date().toLocaleDateString('en-CA');
