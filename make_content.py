@@ -106,4 +106,4 @@ terms=[('water', 'Cohesion', 'Attraction between water molecules.'), ('water', '
 for t,f,b in terms:
  if t not in ['water', 'ph', 'building', 'molecules', 'proteins']:continue
  cards.append(dict(topic=t,front=f,back=b))
-open('dist/content.js','w').write('const TOPICS='+json.dumps(units)+';\nconst QUESTIONS='+json.dumps(qs)+';\nconst CARDS='+json.dumps(cards)+';\n')
+open('public/content.js','w').write('const TOPICS='+json.dumps(units)+';\nconst QUESTIONS='+json.dumps(qs)+';\nconst CARDS='+json.dumps(cards)+';\n')
