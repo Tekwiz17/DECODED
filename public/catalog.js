@@ -1,8 +1,7 @@
 /* Stable topic and card identities keep Biology progress unchanged as courses grow. */
 const Catalog=(()=>{
- const subjects={biology:{name:'Biology',icon:'✳',units:{2:'Chemistry of life'}},geometry:{name:'Geometry A',icon:'◇',units:{1:'Radicals & right triangles',2:'Quadratics & systems',3:'Coordinates & segments',4:'Angles, lines & constructions'}}};
+ const subjects={biology:{name:'Biology A - Regents',icon:'✳',units:{2:'Chemistry of life'}},geometry:{name:'Geometry A',icon:'◇',units:{1:'Radicals & right triangles',2:'Quadratics & systems',3:'Coordinates & segments',4:'Angles, lines & constructions'}}};
  for(const t of TOPICS){t.subject||='biology';t.unit||=2}
- let cursor=0;for(const t of TOPICS.filter(t=>t.subject==='biology'))for(let i=0;i<t.parts.length;i++){CARDS[cursor].section=i;cursor++}
  function subject(){return subjects[progress?.subject]?progress.subject:'biology'}
  function unit(){const s=subjects[subject()];return s.units[progress?.unit]?Number(progress.unit):Number(Object.keys(s.units)[0])}
  function topics(){return TOPICS.filter(t=>t.subject===subject()&&t.unit===unit())}

@@ -164,5 +164,141 @@ t=next(t for t in T if t['id']=='geo-angles');i=len(t['parts']);t['parts'].appen
 for k,n in [('easy',1),('medium',2),('expert',3)]:
  if k!='medium':R[t['id']][k]['parts'].append([p[0],p[n]])
 C.append({'topic':t['id'],'section':i,'front':p[0]+' — explain it in your own words.','back':p[2]})
-Path('public/geometry-content.js').write_text('/* Original Geometry A lessons; append-only IDs preserve existing Biology progress. */\nconst GEOMETRY='+json.dumps({'topics':T,'questions':Q,'cards':C,'reading':R},ensure_ascii=False)+';\nTOPICS.push(...GEOMETRY.topics);QUESTIONS.push(...GEOMETRY.questions);CARDS.push(...GEOMETRY.cards);\nObject.assign(READING_CONTENT.topics,GEOMETRY.reading);\n')
-print(len(T),'geometry lessons,',len(Q),'questions,',len(C),'cards')
+# Align navigation with every printed day, keeping the four uploaded packet units.
+old={t['id']:t for t in T}
+OR=json.loads(json.dumps(R))
+new=[]
+def day(unit,num,id,title,source,indices,model=None,constructions=None):
+ src=old['geo-'+source]; tid='geo-'+id
+ versions={k:{**OR[src['id']][k],'parts':[OR[src['id']][k]['parts'][i][:] for i in indices]} for k in ['easy','medium','expert']}
+ t={**src,'id':tid,'title':title,'unit':unit,'day':num,'group':f'Unit {unit} · Day {num}','model':model or src['model'],'constructions':constructions or [],'parts':versions['medium']['parts']}
+ new.append(t);R[tid]=versions
+ return t
+def part(t,title,easy,medium,expert):
+ for k,text in [('easy',easy),('medium',medium),('expert',expert)]:R[t['id']][k]['parts'].append([title,text])
+ t['parts']=R[t['id']]['medium']['parts']
+day(1,1,'radicals','Simplifying Radicals','radicals',[0,1,2])
+day(1,2,'radical-operations','Adding and Subtracting Radicals','radical-operations',[0])
+t=day(1,3,'radical-products','Multiplying and Dividing Radicals','radical-operations',[1])
+part(t,'Divide and simplify','For √48 ÷ √3, divide inside the roots: √(48/3) = √16 = 4. The denominator cannot be zero.','For a ≥ 0 and b > 0, √a/√b = √(a/b). Simplify the fraction, then the radical. For example, √48/√3 = 4.','The quotient property requires a nonnegative numerator radicand and positive denominator radicand in real-number work. Apply distribution to polynomial products, and simplify all resulting radicals.')
+day(1,4,'rationalize','Rationalizing Denominators','radical-operations',[2])
+day(1,5,'right-triangles','Pythagorean Theorem','right-triangles',[0,1,2])
+for num,id,title in [(1,'factoring','Solving Quadratics by Factoring'),(2,'formula','The Quadratic Formula'),(3,'complete-square','Completing the Square'),(4,'systems','Systems of Equations')]:day(2,num,id,title,id,[0,1,2])
+day(3,1,'points','Points, Lines, Segments and Rays','points',[0,1,2],constructions=['copy-segment'])
+day(3,2,'midpoints','Midpoint','midpoints',[0,1,2],constructions=['midpoint'])
+t=day(3,3,'bisectors','Segment Bisectors','midpoints',[0],model='geo-midpoint')
+part(t,'Turn congruent halves into an equation','If a bisector creates lengths 4x − 1 and 2x + 7, set them equal. Then 2x = 8, so x = 4 and each half is 15.','A segment bisector passes through the midpoint, so the two halves are congruent. Set their length expressions equal, solve, and substitute to find each requested length.','A bisector establishes a midpoint and equality of the two subsegment lengths. Use these facts with segment addition to relate a half-length to the whole. A general segment bisector need not be perpendicular.')
+part(t,'Check what is actually bisected','Look for the segment named in the problem. A line crossing two segments might cut only one of them in half.','State which segment is bisected and identify its midpoint. Do not assume that both intersecting segments bisect each other without evidence.','Incidence at a common point does not establish reciprocal bisection. Distinguish the bisecting object from the segment whose two parts are congruent.')
+day(3,4,'slope','Slope','slope',[0,1,2])
+day(3,5,'line-equations','Writing the Equation of a Line','line-equations',[0,1,2])
+day(4,1,'angles','Types of Angles','angles',[0,1,3],constructions=['copy-angle'])
+t=day(4,2,'angle-bisector','Angle Bisector','angles',[2],constructions=['angle-bisector','incircle'])
+part(t,*['Incenter and incircle']+[OR['geo-centers'][k]['parts'][1][1] for k in ['easy','medium','expert']])
+day(4,3,'parallel','Parallel Lines','parallel',[0,1,2])
+t=day(4,4,'perpendicular','Constructing Parallel and Perpendicular Lines','perpendicular',[0,1,2],constructions=['parallel-corresponding','parallel-alternate','perpendicular-on','perpendicular-off'])
+t=day(4,5,'centers','Perpendicular Bisector','centers',[0],constructions=['perpendicular-bisector'])
+part(t,'Write its equation','Find the segment midpoint first. Use a slope perpendicular to the segment and make the new line pass through that midpoint.','For A(0,0) and B(4,2), midpoint M = (2,1), segment slope = 1/2, and perpendicular slope = −2. Substituting M gives y = −2x + 5.','Compute M = ((x₁+x₂)/2,(y₁+y₂)/2), then use the perpendicular direction through M. A horizontal segment has a vertical bisector; a vertical segment has a horizontal bisector.')
+t=day(4,6,'circumcenter','Circumcenter','centers',[2],constructions=['circumcircle'])
+part(t,'Find it with two perpendicular bisectors','Construct the perpendicular bisectors of two sides. Their intersection is the circumcenter. Keep the compass centered there and open it to any vertex to draw the circle.','Two side perpendicular bisectors locate the circumcenter. Use the distance from that point to any vertex as the radius of the circumcircle. All three vertices must lie on the circle.','Perpendicular-bisector intersections are equidistant from the triangle vertices. Two bisectors suffice; the third is concurrent. For coordinate problems, solve the equations of two perpendicular bisectors.')
+day(4,7,'angle-strategy','Unknown Angle Problems','angle-strategy',[0,1,2])
+T=new
+# Plain, age-appropriate language: keep the mathematical terms and remove personification.
+R['geo-radicals']['easy']['parts'][0][1]='A square root reverses squaring. Since 5 × 5 = 25, √25 = 5. The radical symbol gives the nonnegative root. Solving x² = 25 is different: both 5 and −5 work.'
+for t in T:
+ for k in ['easy','medium','expert']:
+  for p in R[t['id']][k]['parts']:
+   p[0]=p[0].replace('What does a root mean?','Square roots and number types').replace('Pull out a perfect square','Simplify using a perfect-square factor').replace('Variables need a small safety check','Variable radicals and absolute value').replace('Only matching roots combine','Like radicals').replace('Clear a root from the bottom','Rationalizing the denominator').replace('Find the side across from the square corner','Identify the hypotenuse')
+ t['parts']=R[t['id']]['medium']['parts'];t['desc']=R[t['id']]['medium']['desc']
+# Each daily lesson teaches a method, a worked application, and a check.
+t=next(t for t in T if t['id']=='geo-radical-operations')
+part(t,'Simplify before combining','√8 + √18 = 2√2 + 3√2 = 5√2. Simplifying first reveals that the terms are like radicals.','Simplify every radical before combining terms. For √8 + √18, extract square factors to get 2√2 + 3√2 = 5√2.','Rewrite radicals in simplest form before identifying like radical factors. Combine only coefficients of matching simplified radicals.')
+part(t,'Handle subtraction carefully','For 4√3 − (√3 + 2√5), subtract both terms inside the parentheses. The result is 3√3 − 2√5.','Distribute a subtraction sign to every term it affects. 4√3 − (√3 + 2√5) = 4√3 − √3 − 2√5 = 3√3 − 2√5.','Subtraction is addition of the opposite expression. Apply the negative sign across all terms, then combine like radicals; unlike radicals remain separate.')
+t=next(t for t in T if t['id']=='geo-radical-products')
+part(t,'Multiply two binomials','(√3 + 2)(√3 − 2) = 3 − 2√3 + 2√3 − 4 = −1. Multiply all four pairs, then combine terms.','Use distribution for every pair of terms. (√3 + 2)(√3 − 2) simplifies to 3 − 4 = −1 because the middle terms cancel.','The product of conjugates is a difference of squares. Distribution gives (a + b)(a − b) = a² − b², including when one or both terms are radicals.')
+t=next(t for t in T if t['id']=='geo-rationalize')
+part(t,'A single radical in the denominator','For 2/√3, multiply the numerator and denominator by √3. The result is 2√3/3.','Multiply top and bottom by a radical that makes the denominator rational: 2/√3 = 2√3/3. This multiplies the fraction by 1.','Choose a radical factor that converts the denominator radicand to a perfect square. Apply the same nonzero factor to numerator and denominator to preserve equivalence.')
+part(t,'A binomial in the denominator','For 1/(√5 + 1), multiply the numerator and denominator by √5 − 1. The denominator becomes 5 − 1 = 4.','Use the conjugate for a two-term denominator: 1/(√5 + 1) = (√5 − 1)/((√5 + 1)(√5 − 1)) = (√5 − 1)/4.','The conjugate removes the radical cross terms through the difference-of-squares identity. Preserve any original nonzero-denominator restrictions and simplify the resulting fraction.')
+t=next(t for t in T if t['id']=='geo-centers')
+part(t,'Use equal endpoint distances','P lies on the perpendicular bisector of AB. If PA = 2x + 3 and PB = x + 8, set them equal. Then x = 5 and both distances are 13.','A point on the perpendicular bisector is equidistant from the endpoints. Use PA = PB to solve expressions such as 2x + 3 = x + 8.','Apply the perpendicular-bisector theorem to equate distances from a point on the bisector to the segment endpoints. Distinguish this equality from the equality of the two segment halves.')
+# Easy is concise secondary-school language, with the correct terminology retained.
+easy_overrides={
+'geo-radicals':['A square root reverses squaring. Since 5² = 25, √25 = 5. The radical symbol gives the nonnegative root; solving x² = 25 gives both 5 and −5.','Simplify √72 by factoring 72 as 36 × 2. Since √36 = 6, √72 = 6√2. Use the largest perfect-square factor to reduce the work.','For any real x, √(x²) = |x| because a principal square root cannot be negative. If x is known to be nonnegative, |x| = x.'],
+'geo-radical-operations':['Add or subtract radicals only when their simplified radicands match. For example, 3√2 + 4√2 = 7√2. The radicand stays 2.'],
+'geo-radical-products':['Multiply the coefficients and multiply the radicands, then simplify. √3 × √12 = √36 = 6. Use distribution when a factor has more than one term.'],
+'geo-rationalize':['Rationalizing rewrites a fraction without a radical in its denominator. Multiply the numerator and denominator by the same nonzero expression so the value stays unchanged.'],
+'geo-right-triangles':['In a right triangle, the hypotenuse is opposite the 90° angle. The other sides are the legs. The Pythagorean theorem is a² + b² = c², where c is the hypotenuse.','For legs 6 and 8, c² = 36 + 64 = 100, so c = 10. To find a missing leg, subtract the known leg’s square from the hypotenuse’s square before taking the square root.','From (1,2) to (4,6), the horizontal change is 3 and vertical change is 4. These form perpendicular legs, so the distance is √(3² + 4²) = 5.'],
+'geo-factoring':['Write the equation with zero on one side and terms in descending powers. Factor out a common factor first, if there is one.','If a product equals zero, at least one factor equals zero. For (x − 2)(x + 3) = 0, solve x − 2 = 0 or x + 3 = 0. The solutions are 2 and −3.','Substitute each solution into the original equation. Do not divide by a variable that could be zero: x(x − 4) = 0 has solutions 0 and 4.'],
+'geo-formula':['First write ax² + bx + c = 0. In 2x² − 3x − 5 = 0, a = 2, b = −3, and c = −5. Keep the signs with the coefficients.','Use x = (−b ± √(b² − 4ac))/(2a). Calculate once with + and once with −. Divide the entire numerator by 2a.','The discriminant is b² − 4ac. A positive result gives two real solutions, zero gives one repeated solution, and a negative result gives no real solutions.'],
+'geo-complete-square':['If the coefficient of x² is not 1, divide every term by it. Then move the constant term to the other side.','For x² + 6x, half of 6 is 3 and 3² = 9. Add 9 to both sides so the left becomes (x + 3)².','x² + 6x = 7 becomes (x + 3)² = 16. Then x + 3 = ±4, giving x = 1 or x = −7.'],
+'geo-systems':['A solution to a system must satisfy both equations. On a graph, the solutions are the intersection points.','For substitution, replace a variable with an equal expression from the other equation. For elimination, combine equations so one variable cancels. Then solve for both coordinates.','For a rectangle, area = LW and perimeter = 2L + 2W. These form two equations for the same dimensions. Keep only positive side lengths.'],
+'geo-points':['A point is a location. A line extends in both directions; a segment has two endpoints. A ray has one endpoint and extends in one direction.','In (x,y), x is the horizontal coordinate and y is the vertical coordinate. To plot (−2,3), move left 2 and up 3.','If B lies between A and C, AB + BC = AC. If AC = 15 and AB = 6, then BC = 9. Use a compass to transfer a segment length without measuring it with a ruler.'],
+'geo-midpoints':['A midpoint divides a segment into two congruent segments. A segment bisector passes through that midpoint; it does not have to be perpendicular.','Average the x-coordinates and then the y-coordinates. The midpoint of (0,2) and (6,8) is (3,5). To find a missing endpoint, double the midpoint and subtract the known endpoint.','Use equal compass openings greater than half the segment length. Draw intersecting arcs from both endpoints. Connect the two arc intersections to locate the midpoint.'],
+'geo-slope':['Slope is the change in y divided by the change in x. A rise of 2 for a run of 1 gives slope 2.','A horizontal line has slope 0 because its vertical change is zero. A vertical line has undefined slope because division by zero is undefined.','Collinear points lie on the same line. Compare slopes using a shared point, or check whether all x-coordinates match for a vertical line.'],
+'geo-line-equations':['In y = mx + b, m is the slope and b is the y-intercept. For m = 2 and b = 3, the equation is y = 2x + 3.','For slope 3 through (2,7), substitute into y = 3x + b. Then 7 = 6 + b, so b = 1 and y = 3x + 1.','Substitute the given point into your final equation. With two given points, check both. Handle a vertical line separately as x = a constant.'],
+'geo-angles':['An angle is formed by two rays sharing a vertex. In ∠ABC, B is the vertex. Acute angles are below 90°, right angles equal 90°, obtuse angles lie between 90° and 180°, and straight angles equal 180°.','Complementary angles total 90°; supplementary angles total 180°. A full turn is 360°. Opposite angles formed by intersecting lines are vertical angles and are equal.','Draw a new base ray. Use the same-radius arcs at the original and new vertices. Transfer the distance between the original arc marks onto the new arc, then draw the second ray.'],
+'geo-angle-bisector':['An angle bisector divides an angle into two congruent angles. Bisecting 110° gives two 55° angles. If the two halves are expressions, set them equal.','A triangle’s internal angle bisectors meet at the incenter. It is inside the triangle and equally distant from its sides. Its circle, the incircle, touches all three sides.'],
+'geo-parallel':['A transversal crosses two lines at different points. If those lines are parallel, corresponding and alternate angles are equal; same-side interior angles total 180°.','Corresponding angles occupy matching positions. Alternate interior angles are between the lines and on opposite sides of the transversal.','Choose the relationship before writing an equation. Equal angles 2x + 10 and 70 give 2x + 10 = 70. Same-side interior angles 2x and 3x give 2x + 3x = 180.'],
+'geo-perpendicular':['Parallel nonvertical lines have the same slope. Vertical lines are parallel to other distinct vertical lines.','Perpendicular lines meet at 90°. For a nonzero slope, use the negative reciprocal: 2/3 becomes −3/2. A horizontal line is perpendicular to a vertical line.','Choose the parallel or perpendicular slope first. Substitute the given point into y = mx + b to find b. For a vertical line, use x = a constant.'],
+'geo-centers':['A perpendicular bisector passes through a segment’s midpoint at 90°. Every point on it is equally far from the two endpoints.'],
+'geo-circumcenter':['A triangle’s side perpendicular bisectors meet at the circumcenter. It is equally far from all three vertices. A circle centered there passes through the vertices, and the center can be outside the triangle.'],
+'geo-angle-strategy':['Start with a known relationship: a straight angle is 180°, a triangle totals 180°, and a full turn is 360°. Use markings and stated facts, rather than how the diagram looks.','Write an equation using the angle relationship. For triangle angles x, 2x, and 3x, solve 6x = 180. Then x = 30°, so the angles are 30°, 60°, and 90°.','An auxiliary line is an extra line added for a specific reason. For example, drawing a parallel through a vertex can reveal equal alternate interior angles. Explain why the added line helps.']}
+for t in T:
+ for i,text in enumerate(easy_overrides.get(t['id'],[])):R[t['id']]['easy']['parts'][i][1]=text
+ t['parts']=R[t['id']]['medium']['parts']
+examples={
+'geo-radicals':'√98 = √(49 × 2) = 7√2. The factor 49 is a perfect square.',
+'geo-radical-operations':'√20 + √45 = 2√5 + 3√5 = 5√5. Simplify before combining coefficients.',
+'geo-radical-products':'√2(3 + √2) = 3√2 + 2. Multiply √2 by both terms inside the parentheses.',
+'geo-rationalize':'2/√3 = (2√3)/(√3 × √3) = 2√3/3. Multiplying top and bottom by √3 preserves the value.',
+'geo-right-triangles':'For a square with side 5, d² = 5² + 5² = 50, so its diagonal is √50 = 5√2.',
+'geo-factoring':'x² + x − 6 = 0 factors as (x + 3)(x − 2) = 0. The solutions are x = −3 and x = 2.',
+'geo-formula':'For x² − 2x − 3 = 0, a = 1, b = −2, c = −3. The formula gives x = (2 ± 4)/2 = 3 or −1.',
+'geo-complete-square':'x² + 6x = 7. Add 9 to both sides: (x + 3)² = 16. Thus x = −3 ± 4 = 1 or −7.',
+'geo-systems':'For y = x + 1 and x + y = 7, substitute: 2x + 1 = 7. Then x = 3 and y = 4. Check both original equations.',
+'geo-points':'B is between A and C. If AB = 6 and AC = 17, then 6 + BC = 17, giving BC = 11.',
+'geo-midpoints':'For A(−2,3) and B(4,−3), M = ((−2 + 4)/2, (3 − 3)/2) = (1,0).',
+'geo-bisectors':'A bisector creates halves 3x + 1 and x + 9. Set them equal: 3x + 1 = x + 9. Then x = 4 and each half is 13.',
+'geo-slope':'Through (1,2) and (3,8), m = (8 − 2)/(3 − 1) = 6/2 = 3. Through two points with the same x-coordinate, slope is undefined.',
+'geo-line-equations':'Slope 2 through (3,7): 7 = 2(3) + b, so b = 1. The line is y = 2x + 1.',
+'geo-angles':'Two adjacent angles measuring 28° and 47° form a 75° angle. The supplement of 75° is 180° − 75° = 105°.',
+'geo-angle-bisector':'An angle bisector makes halves 3x + 5 and 5x − 15. Equate them: x = 10. Each half is 35°, so the whole angle is 70°.',
+'geo-parallel':'For parallel lines, same-side interior angles 2x and 3x satisfy 2x + 3x = 180. Thus x = 36 and the angles are 72° and 108°.',
+'geo-perpendicular':'A line perpendicular to y = 2x + 1 through (0,3) has slope −1/2, so its equation is y = −x/2 + 3.',
+'geo-centers':'For the segment from (0,0) to (4,2), midpoint M = (2,1) and segment slope is 1/2. Its perpendicular bisector has equation y = −2x + 5.',
+'geo-circumcenter':'A right triangle with vertices (0,0), (6,0), and (0,8) has circumcenter (3,4), the midpoint of its hypotenuse. Each vertex is 5 units from that center.',
+'geo-angle-strategy':'Triangle angles x + 10, 2x, and 80° give 3x + 90 = 180. Then x = 30°, and the three angles are 40°, 60°, and 80°.'}
+for t in T:
+ for k in ['easy','medium','expert']:
+  R[t['id']][k]['example']=examples[t['id']]
+  R[t['id']][k]['desc']=R[t['id']][k]['parts'][0][1]
+ t['example']=examples[t['id']];t['desc']=R[t['id']]['medium']['desc']
+# New daily lessons have their own practice sets; old question indices remain stable.
+for q in Q:
+ if q['topic']=='geo-radical-operations':
+  if 'Rationalize' in q['prompt']:q['topic']='geo-rationalize'
+  elif 'multiply' in q['prompt'].lower() or '(√5' in q['prompt']:q['topic']='geo-radical-products'
+ if q['topic']=='geo-centers':
+  if 'incenter' in q['why'].lower():q['topic']='geo-angle-bisector'
+  elif 'circumcircle' in q['prompt'].lower():q['topic']='geo-circumcenter'
+ if q['topic']=='geo-angles' and 'bisector' in q['prompt'].lower():q['topic']='geo-angle-bisector'
+def question(id,p,opts,a,why):Q.append({'topic':'geo-'+id,'prompt':p,'options':opts,'answer':a,'why':why})
+for args in [
+('radical-operations','Simplify 7√5 − 2√5.',['5','5√5','√5','9√5'],1,'Subtract the coefficients; keep the common radical: (7 − 2)√5 = 5√5.'),
+('radical-operations','Which pair can be combined directly by adding coefficients?',['√2 and √3','2√7 and 5√7','√5 and 5','√2 and 2'],1,'The second pair has the same simplified radicand, 7.'),
+('radical-products','Simplify √6 × √24.',['√30','6','12','24'],2,'√(6 × 24) = √144 = 12.'),
+('radical-products','Simplify √75 ÷ √3.',['5','25','√78','√72'],0,'√(75/3) = √25 = 5.'),
+('rationalize','Rationalize 1/(√5 + 1).',['(√5 + 1)/6','(√5 − 1)/4','√5 − 1','1/6'],1,'Multiply numerator and denominator by √5 − 1. The denominator becomes 5 − 1 = 4.'),
+('rationalize','The conjugate of 3 − √2 is…',['−3 + √2','3 + √2','√3 − 2','3 − √2'],1,'A conjugate changes the sign between the same two terms.'),
+('bisectors','A bisector makes segment halves 3x + 2 and x + 10. Find x.',['2','4','6','8'],1,'Set equal: 3x + 2 = x + 10, so 2x = 8 and x = 4.'),
+('bisectors','A line bisects AB at M. If AM = 9, AB = ?',['4.5','9','18','27'],2,'AM = MB = 9, so AB = 18.'),
+('bisectors','Does a segment bisector always meet the segment at 90°?',['Yes','Only if the segment is horizontal','No','Only on a grid'],2,'It must pass through the midpoint. Perpendicularity is an additional condition.'),
+('angles','An angle of 125° is…',['Acute','Right','Obtuse','Straight'],2,'Obtuse angles are greater than 90° and less than 180°.'),
+('angle-bisector','Angle halves are 2x + 5 and 3x − 10. Find x.',['5','10','15','20'],2,'Bisected angles are equal: 2x + 5 = 3x − 10 gives x = 15.'),
+('centers','Every point on a perpendicular bisector is…',['Equidistant from the segment endpoints','A vertex','Inside a triangle','On the original segment'],0,'The perpendicular bisector is the set of points equally distant from both endpoints.'),
+('centers','Perpendicular bisector of the segment (0,0) to (4,2)?',['y = 2x + 1','y = −2x + 5','y = x/2','x = 4'],1,'Midpoint (2,1), perpendicular slope −2: y − 1 = −2(x − 2), so y = −2x + 5.'),
+('circumcenter','The circumcenter is the intersection of…',['Medians','Angle bisectors','Side perpendicular bisectors','Triangle sides'],2,'Side perpendicular bisectors meet at a point equidistant from all three vertices.'),
+('circumcenter','Can a circumcenter be outside its triangle?',['Yes, for an obtuse triangle','No, never','Only for an equilateral triangle','Only for an acute triangle'],0,'An obtuse triangle has its circumcenter outside; the incenter stays inside.')]:question(*args)
+# Fresh terms-only flashcards are authored separately, with explicit migration of old review IDs.
+C=[]
+Path('public/geometry-content.js').write_text('/* Geometry daily lessons follow uploaded packet order. */\nconst GEOMETRY='+json.dumps({'topics':T,'questions':Q,'cards':C,'reading':{t['id']:R[t['id']] for t in T}},ensure_ascii=False)+';\nTOPICS.push(...GEOMETRY.topics);QUESTIONS.push(...GEOMETRY.questions);\nObject.assign(READING_CONTENT.topics,GEOMETRY.reading);\n')
+print(len(T),'Geometry daily lessons,',len(Q),'practice questions')

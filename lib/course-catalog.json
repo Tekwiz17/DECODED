@@ -52,8 +52,24 @@
     "geo-radical-operations": {
       "questions": [
         19,
+        64,
+        65
+      ],
+      "partMax": 2
+    },
+    "geo-radical-products": {
+      "questions": [
         20,
-        21
+        66,
+        67
+      ],
+      "partMax": 2
+    },
+    "geo-rationalize": {
+      "questions": [
+        21,
+        68,
+        69
       ],
       "partMax": 2
     },
@@ -113,6 +129,14 @@
       ],
       "partMax": 2
     },
+    "geo-bisectors": {
+      "questions": [
+        70,
+        71,
+        72
+      ],
+      "partMax": 2
+    },
     "geo-slope": {
       "questions": [
         43,
@@ -133,9 +157,17 @@
       "questions": [
         49,
         50,
-        51
+        73
       ],
-      "partMax": 3
+      "partMax": 2
+    },
+    "geo-angle-bisector": {
+      "questions": [
+        51,
+        58,
+        74
+      ],
+      "partMax": 1
     },
     "geo-parallel": {
       "questions": [
@@ -155,11 +187,19 @@
     },
     "geo-centers": {
       "questions": [
-        58,
-        59,
-        60
+        60,
+        75,
+        76
       ],
       "partMax": 2
+    },
+    "geo-circumcenter": {
+      "questions": [
+        59,
+        77,
+        78
+      ],
+      "partMax": 1
     },
     "geo-angle-strategy": {
       "questions": [
@@ -170,6 +210,6 @@
       "partMax": 2
     }
   },
-  "cards": 79,
-  "questions": 64
+  "cards": 88,
+  "questions": 79
 }

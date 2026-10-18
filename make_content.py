@@ -99,12 +99,7 @@ q('proteins','Which protein level is the amino acid sequence?',['Primary','Secon
 q('proteins','After typical heat denaturation, what usually remains intact?',['The original active-site shape','All hydrogen bonds','The amino acid sequence','All interactions among subunits'],2,'Typical denaturation disrupts folding while leaving most peptide bonds and thus primary sequence intact.')
 q('proteins','What mainly stabilizes alpha helices and beta sheets?',['Hydrogen bonds between backbone groups','Bonds between all R groups','Glycosidic bonds','New nucleotides'],0,'Secondary structure relies on backbone C=O and N–H hydrogen bonds.')
 q('proteins','Two cysteine side chains can form a…',['hydrogen ion.','disulfide bridge.','nucleotide.','starch chain.'],1,'Cysteine side chains can form a covalent disulfide bridge that stabilizes a folded protein.')
-# Each lesson provides retrieval cards from its conceptual sections, plus custom compact definitions.
+# Flashcards are authored only as terms in make_terms.py, never from lesson paragraphs.
 cards=[]
-for u in units:
- for title,body in u['parts']:cards.append(dict(topic=u['id'],front=title+' — explain it in your own words.',back=body))
 terms=[('water', 'Cohesion', 'Attraction between water molecules.'), ('water', 'Adhesion', 'Attraction between water and another surface.'), ('ph', 'Buffer', 'A substance or system that resists pH changes by accepting or releasing H⁺.'), ('building', 'Hydrolysis', 'Using water to split a covalent bond.'), ('building', 'Dehydration synthesis', 'A simplified joining reaction that forms a covalent bond and releases water.'), ('proteins', 'Primary vs. tertiary structure', 'Primary: amino acid order. Tertiary: the overall 3D fold of one polypeptide.'), ('proteins', 'R group', 'The variable side chain of an amino acid; its properties affect folding and interactions.')]
-for t,f,b in terms:
- if t not in ['water', 'ph', 'building', 'molecules', 'proteins']:continue
- cards.append(dict(topic=t,front=f,back=b))
 open('public/content.js','w').write('const TOPICS='+json.dumps(units)+';\nconst QUESTIONS='+json.dumps(qs)+';\nconst CARDS='+json.dumps(cards)+';\n')
