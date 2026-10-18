@@ -40,6 +40,7 @@ add('proteins','Protein shape → protein job','Follow a chain from amino acids 
 ['Denaturation: losing the useful shape','Heat or extreme pH can disrupt interactions that stabilize a protein’s shape. This can change an active site or other functional region and reduce function. Typical denaturation leaves the peptide backbone and amino acid sequence intact. Some proteins can refold; others cannot under those conditions.']],
 'Denaturation usually changes folding, not primary sequence. Hydrophobic interactions are not covalent bonds, and ordinary heating does not necessarily break disulfide bonds.',
 'Cooking an egg changes how albumin and other proteins fold and interact. The egg white becomes opaque and firm. Cooling it does not simply turn it back into raw egg white.','protein')
+expert_parts={u['id']:[list(p) for p in u['parts']] for u in units}
 # Keep the reading level around ninth grade without dropping the class vocabulary.
 simple_parts = {
 'water': [

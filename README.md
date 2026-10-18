@@ -34,3 +34,8 @@ Account records use the stable, site-specific ChatGPT user ID. The progress data
 XP is a personal motivational tool, not an anti-cheat system or a formal grade. There are no public leaderboards, analytics, or student-to-student messaging. Google Fonts is optional; system fonts are fallbacks.
 
 The notes video and original worksheets are not published. Lessons, Byte, diagrams, and practice questions are original. References appear in About & privacy: NYSED Life Science Biology and OpenStax Biology 2e. Independent study resource, not an official NYSED course. Inspired by short, rewarding learning experiences, with its own branding and character.
+
+## Reading levels
+The shared reading setting applies across the app and is saved with account progress (or on the guest device): **EASY** uses everyday words and short steps, **MEDIUM** uses clear ninth-grade explanations, and **EXPERT** restores detailed notes vocabulary. It changes explanations, not the learning objectives, answer key, completion, or XP. Learners can switch mid-lesson, mid-flashcard, or after submitting a practice answer without losing their place.
+
+`make_reading.py` authors the three versions in `public/reading-content.js`; run it after `make_content.py` changes. `public/reading.js` handles the shared selector, updates content in place, and preserves activity state. Every future topic can register `READING_CONTENT.topics[topicId]` with matching `easy`, `medium`, and `expert` objects. Keep section counts and question option meanings aligned across levels. Missing future variants fall back to the original text rather than silently inventing science. Only Biology Unit 2 is currently authored.
