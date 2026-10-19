@@ -1,0 +1,1341 @@
+{
+  "reviewed": "2026-10-19",
+  "basis": {
+    "algebra1": {
+      "title": "Algebra I",
+      "framework": "NYS Next Generation Mathematics Learning Standards; current Regents course",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf",
+        "https://www.nysed.gov/standards-instruction/mathematics",
+        "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-algebra-i-crosswalk.pdf"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Expressions and quantitative reasoning",
+          "standards": [
+            "AI-N.Q family",
+            "AI-N.RN family",
+            "AI-A.SSE family"
+          ],
+          "essentialTopics": [
+            "Units and quantities",
+            "Real numbers",
+            "Equivalent expressions"
+          ]
+        },
+        {
+          "title": "Equations and inequalities",
+          "standards": [
+            "AI-A.CED family",
+            "AI-A.REI family"
+          ],
+          "essentialTopics": [
+            "Linear equations",
+            "Literal equations",
+            "Inequalities"
+          ]
+        },
+        {
+          "title": "Functions and graphs",
+          "standards": [
+            "AI-F.IF family"
+          ],
+          "essentialTopics": [
+            "Function notation",
+            "Domain and range",
+            "Graph interpretation"
+          ]
+        },
+        {
+          "title": "Linear models",
+          "standards": [
+            "AI-F.IF family",
+            "AI-F.BF family",
+            "AI-F.LE family"
+          ],
+          "essentialTopics": [
+            "Slope and intercepts",
+            "Linear functions",
+            "Context and constraints"
+          ]
+        },
+        {
+          "title": "Systems",
+          "standards": [
+            "AI-A.REI family"
+          ],
+          "essentialTopics": [
+            "Substitution and elimination",
+            "Graphical solutions",
+            "Systems of inequalities"
+          ]
+        },
+        {
+          "title": "Exponents and polynomials",
+          "standards": [
+            "AI-A.APR family",
+            "AI-A.SSE family"
+          ],
+          "essentialTopics": [
+            "Exponent properties",
+            "Polynomial operations",
+            "Factoring"
+          ]
+        },
+        {
+          "title": "Quadratic functions and equations",
+          "standards": [
+            "AI-A.REI family",
+            "AI-F.IF family"
+          ],
+          "essentialTopics": [
+            "Factoring and roots",
+            "Completing square and formula",
+            "Quadratic models"
+          ]
+        },
+        {
+          "title": "Exponential functions and sequences",
+          "standards": [
+            "AI-F.LE family",
+            "AI-F.BF family",
+            "AI-F.IF family"
+          ],
+          "essentialTopics": [
+            "Growth and decay",
+            "Arithmetic and geometric sequences",
+            "Linear versus exponential"
+          ]
+        },
+        {
+          "title": "Statistics and modeling",
+          "standards": [
+            "AI-S.ID family"
+          ],
+          "essentialTopics": [
+            "Distributions and variability",
+            "Two-variable data",
+            "Regression and residuals"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk."
+      ]
+    },
+    "geometry": {
+      "title": "Geometry",
+      "framework": "NYS Next Generation Mathematics Learning Standards; current Regents course",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf",
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-math-standards-geometry-crosswalk.pdf",
+        "https://www.nysed.gov/sites/default/files/programs/state-assessment/geometry-educator-guide-2024.pdf"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Foundations and constructions",
+          "standards": [
+            "GEO-G.CO family"
+          ],
+          "essentialTopics": [
+            "Definitions and notation",
+            "Bisectors and perpendiculars",
+            "Compass-straightedge constructions"
+          ]
+        },
+        {
+          "title": "Rigid motions and congruence",
+          "standards": [
+            "GEO-G.CO family"
+          ],
+          "essentialTopics": [
+            "Translations rotations reflections",
+            "Compositions",
+            "Congruence"
+          ]
+        },
+        {
+          "title": "Lines angles and proofs",
+          "standards": [
+            "GEO-G.CO family"
+          ],
+          "essentialTopics": [
+            "Parallel lines",
+            "Angle relationships",
+            "Reasoned proof"
+          ]
+        },
+        {
+          "title": "Triangles and quadrilaterals",
+          "standards": [
+            "GEO-G.CO family"
+          ],
+          "essentialTopics": [
+            "Triangle congruence criteria",
+            "Triangle theorems",
+            "Parallelogram properties"
+          ]
+        },
+        {
+          "title": "Dilations and similarity",
+          "standards": [
+            "GEO-G.SRT family"
+          ],
+          "essentialTopics": [
+            "Scale factor",
+            "Similar triangles",
+            "Proportionality"
+          ]
+        },
+        {
+          "title": "Right triangles and trigonometry",
+          "standards": [
+            "GEO-G.SRT family"
+          ],
+          "essentialTopics": [
+            "Pythagorean relationships",
+            "Sine cosine tangent",
+            "Applications"
+          ]
+        },
+        {
+          "title": "Coordinate geometry",
+          "standards": [
+            "GEO-G.GPE family"
+          ],
+          "essentialTopics": [
+            "Distance midpoint partition",
+            "Slope proofs",
+            "Equations of circles"
+          ]
+        },
+        {
+          "title": "Circle relationships",
+          "standards": [
+            "GEO-G.C family"
+          ],
+          "essentialTopics": [
+            "Arcs and angles",
+            "Chords tangents secants",
+            "Arc length and sectors"
+          ]
+        },
+        {
+          "title": "Solid geometry and models",
+          "standards": [
+            "GEO-G.GMD family",
+            "GEO-G.MG family"
+          ],
+          "essentialTopics": [
+            "Volume and cross sections",
+            "Density and scale",
+            "Geometric modeling"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk."
+      ]
+    },
+    "algebra2": {
+      "title": "Algebra II",
+      "framework": "NYS Next Generation Mathematics Learning Standards; current Regents course",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf",
+        "https://www.nysed.gov/standards-instruction/mathematics"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Functions transformations and inverses",
+          "standards": [
+            "AII-F.IF family",
+            "AII-F.BF family"
+          ],
+          "essentialTopics": [
+            "Function composition",
+            "Transformations",
+            "Inverse relationships"
+          ]
+        },
+        {
+          "title": "Polynomial arithmetic and structure",
+          "standards": [
+            "AII-A.APR family",
+            "AII-A.SSE family"
+          ],
+          "essentialTopics": [
+            "Polynomial operations",
+            "Factoring",
+            "Identities and division"
+          ]
+        },
+        {
+          "title": "Polynomial equations and complex numbers",
+          "standards": [
+            "AII-N.CN family",
+            "AII-A.REI family"
+          ],
+          "essentialTopics": [
+            "Complex arithmetic",
+            "Roots and zeros",
+            "Polynomial graphs"
+          ]
+        },
+        {
+          "title": "Rational expressions and functions",
+          "standards": [
+            "AII-A.APR family",
+            "AII-A.REI family",
+            "AII-F.IF family"
+          ],
+          "essentialTopics": [
+            "Restrictions",
+            "Rational equations",
+            "Asymptotic behavior"
+          ]
+        },
+        {
+          "title": "Radicals and rational exponents",
+          "standards": [
+            "AII-N.RN family",
+            "AII-A.REI family"
+          ],
+          "essentialTopics": [
+            "Equivalent forms",
+            "Radical equations",
+            "Extraneous solutions"
+          ]
+        },
+        {
+          "title": "Exponential and logarithmic functions",
+          "standards": [
+            "AII-F.LE family",
+            "AII-F.BF family"
+          ],
+          "essentialTopics": [
+            "Logarithms as inverses",
+            "Exponential equations",
+            "Growth models"
+          ]
+        },
+        {
+          "title": "Sequences and series",
+          "standards": [
+            "AII-F.IF family",
+            "AII-F.BF family",
+            "AII-A.SSE family"
+          ],
+          "essentialTopics": [
+            "Recursive and explicit rules",
+            "Arithmetic and geometric sequences",
+            "Finite geometric series"
+          ]
+        },
+        {
+          "title": "Trigonometric functions",
+          "standards": [
+            "AII-F.TF family"
+          ],
+          "essentialTopics": [
+            "Radians and unit circle",
+            "Periodic graphs",
+            "Identities and equations"
+          ]
+        },
+        {
+          "title": "Probability",
+          "standards": [
+            "AII-S.CP family"
+          ],
+          "essentialTopics": [
+            "Conditional probability",
+            "Independence",
+            "Compound events"
+          ]
+        },
+        {
+          "title": "Statistics and inference",
+          "standards": [
+            "AII-S.ID family",
+            "AII-S.IC family"
+          ],
+          "essentialTopics": [
+            "Normal distributions",
+            "Sampling and experiments",
+            "Simulation and inference"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk."
+      ]
+    },
+    "biology": {
+      "title": "Life Science: Biology",
+      "framework": "NYSP12SLS adopted 2016; current Life Science: Biology Regents",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/hs-science-learning-standards.pdf",
+        "https://www.nysed.gov/state-assessment/life-science-biology",
+        "https://www.nysed.gov/state-assessment/high-school-sciences"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Investigating living systems",
+          "standards": [
+            "Science and Engineering Practices",
+            "HS-LS1 family"
+          ],
+          "essentialTopics": [
+            "Evidence and models",
+            "Controlled investigations",
+            "Data and explanations"
+          ]
+        },
+        {
+          "title": "Chemistry and cells",
+          "standards": [
+            "HS-LS1 family"
+          ],
+          "essentialTopics": [
+            "Biomolecules and enzymes",
+            "Cell structures",
+            "Membrane transport"
+          ]
+        },
+        {
+          "title": "Organization and homeostasis",
+          "standards": [
+            "HS-LS1 family"
+          ],
+          "essentialTopics": [
+            "Body systems",
+            "Feedback",
+            "Structure and function"
+          ]
+        },
+        {
+          "title": "Matter and energy in organisms",
+          "standards": [
+            "HS-LS1 family",
+            "HS-LS2 family"
+          ],
+          "essentialTopics": [
+            "Photosynthesis",
+            "Cellular respiration",
+            "Matter and energy accounting"
+          ]
+        },
+        {
+          "title": "Cell division and inheritance",
+          "standards": [
+            "HS-LS1 family",
+            "HS-LS3 family"
+          ],
+          "essentialTopics": [
+            "Mitosis and meiosis",
+            "Inheritance",
+            "Genetic variation"
+          ]
+        },
+        {
+          "title": "DNA and gene expression",
+          "standards": [
+            "HS-LS1 family",
+            "HS-LS3 family"
+          ],
+          "essentialTopics": [
+            "DNA to proteins",
+            "Mutations",
+            "Biotechnology evidence"
+          ]
+        },
+        {
+          "title": "Evolution and diversity",
+          "standards": [
+            "HS-LS4 family"
+          ],
+          "essentialTopics": [
+            "Common ancestry",
+            "Natural selection",
+            "Adaptation and speciation"
+          ]
+        },
+        {
+          "title": "Ecosystem interactions",
+          "standards": [
+            "HS-LS2 family",
+            "HS-LS4 family"
+          ],
+          "essentialTopics": [
+            "Populations and carrying capacity",
+            "Food webs",
+            "Stability and biodiversity"
+          ]
+        },
+        {
+          "title": "Earth life and environmental change",
+          "standards": [
+            "HS-LS2 family",
+            "HS-LS4 family",
+            "HS-ESS2-6",
+            "HS-ESS2-7"
+          ],
+          "essentialTopics": [
+            "Carbon cycling",
+            "Earth-life interactions",
+            "Human impacts and solutions"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Scientific practices, crosscutting concepts, and required school investigations must be integrated throughout; a website cannot certify laboratory eligibility."
+      ]
+    },
+    "earth": {
+      "title": "Earth and Space Sciences",
+      "framework": "NYSP12SLS adopted 2016; current Earth and Space Sciences Regents",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/hs-science-learning-standards.pdf",
+        "https://www.nysed.gov/state-assessment/earth-and-space-sciences",
+        "https://www.nysed.gov/sites/default/files/programs/state-assessment/earth-space-sciences-pld.pdf"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Evidence maps and Earth systems",
+          "standards": [
+            "HS-ESS2 family",
+            "Science and Engineering Practices"
+          ],
+          "essentialTopics": [
+            "Maps and spatial models",
+            "System interactions",
+            "Reference-table reasoning"
+          ]
+        },
+        {
+          "title": "Universe and stars",
+          "standards": [
+            "HS-ESS1 family"
+          ],
+          "essentialTopics": [
+            "Cosmic evidence",
+            "Stellar life cycles",
+            "Nuclear fusion and elements"
+          ]
+        },
+        {
+          "title": "Solar system and cyclic patterns",
+          "standards": [
+            "HS-ESS1 family",
+            "HS-ESS1-4",
+            "HS-ESS1-7"
+          ],
+          "essentialTopics": [
+            "Orbital motion",
+            "Seasons and lunar patterns",
+            "Eclipses and tides"
+          ]
+        },
+        {
+          "title": "Earth history",
+          "standards": [
+            "HS-ESS1 family",
+            "HS-ESS2 family"
+          ],
+          "essentialTopics": [
+            "Relative and radiometric dating",
+            "Geologic evidence",
+            "Earth formation"
+          ]
+        },
+        {
+          "title": "Interior and tectonics",
+          "standards": [
+            "HS-ESS2 family"
+          ],
+          "essentialTopics": [
+            "Convection",
+            "Plate boundaries",
+            "Earthquakes and volcanism"
+          ]
+        },
+        {
+          "title": "Surface processes",
+          "standards": [
+            "HS-ESS2 family"
+          ],
+          "essentialTopics": [
+            "Rock and mineral processes",
+            "Weathering erosion deposition",
+            "Landscape evidence"
+          ]
+        },
+        {
+          "title": "Water and oceans",
+          "standards": [
+            "HS-ESS2 family"
+          ],
+          "essentialTopics": [
+            "Water properties and cycling",
+            "Ocean circulation",
+            "System feedbacks"
+          ]
+        },
+        {
+          "title": "Atmosphere weather and climate",
+          "standards": [
+            "HS-ESS2 family",
+            "HS-ESS3 family"
+          ],
+          "essentialTopics": [
+            "Atmospheric energy",
+            "Weather evidence",
+            "Climate drivers and change"
+          ]
+        },
+        {
+          "title": "Resources hazards and solutions",
+          "standards": [
+            "HS-ESS3 family",
+            "HS-ETS1 family"
+          ],
+          "essentialTopics": [
+            "Resource distribution",
+            "Hazard mitigation",
+            "Human impacts and design"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Use the current NYSED reference tables: the official subject page lists a 2026 revised edition."
+      ]
+    },
+    "chemistry": {
+      "title": "Physical Science: Chemistry",
+      "framework": "NYSP12SLS adopted 2016; current Physical Science: Chemistry Regents",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/hs-science-learning-standards.pdf",
+        "https://www.nysed.gov/state-assessment/physical-science-chemistry",
+        "https://www.nysed.gov/sites/default/files/programs/state-assessment/physical-science-chemistry-plds.pdf"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Matter measurement and models",
+          "standards": [
+            "HS-PS1 family",
+            "Science and Engineering Practices"
+          ],
+          "essentialTopics": [
+            "Particle models",
+            "Measurement and uncertainty",
+            "Physical and chemical change"
+          ]
+        },
+        {
+          "title": "Atoms and periodic patterns",
+          "standards": [
+            "HS-PS1 family",
+            "HS-PS1-1"
+          ],
+          "essentialTopics": [
+            "Atomic structure",
+            "Electron patterns",
+            "Periodic properties"
+          ]
+        },
+        {
+          "title": "Bonding and molecular properties",
+          "standards": [
+            "HS-PS1 family",
+            "HS-PS1-3"
+          ],
+          "essentialTopics": [
+            "Chemical bonds",
+            "Polarity and intermolecular forces",
+            "Structure-property evidence"
+          ]
+        },
+        {
+          "title": "Reactions and quantities",
+          "standards": [
+            "HS-PS1 family"
+          ],
+          "essentialTopics": [
+            "Equations and conservation",
+            "Moles and proportions",
+            "Stoichiometry"
+          ]
+        },
+        {
+          "title": "States gases and solutions",
+          "standards": [
+            "HS-PS1 family",
+            "HS-PS3 family"
+          ],
+          "essentialTopics": [
+            "Particle motion",
+            "Gas relationships",
+            "Solutions and concentration"
+          ]
+        },
+        {
+          "title": "Energy and thermochemistry",
+          "standards": [
+            "HS-PS1 family",
+            "HS-PS3 family"
+          ],
+          "essentialTopics": [
+            "Energy transfer",
+            "Reaction energy",
+            "Quantitative energy models"
+          ]
+        },
+        {
+          "title": "Rates and equilibrium",
+          "standards": [
+            "HS-PS1 family"
+          ],
+          "essentialTopics": [
+            "Collision models",
+            "Reaction rates",
+            "Dynamic equilibrium and disturbances"
+          ]
+        },
+        {
+          "title": "Acids bases and redox",
+          "standards": [
+            "HS-PS1 family"
+          ],
+          "essentialTopics": [
+            "Acid-base behavior and pH",
+            "Neutralization",
+            "Electron transfer and electrochemistry"
+          ]
+        },
+        {
+          "title": "Carbon and nuclear chemistry",
+          "standards": [
+            "HS-PS1 family"
+          ],
+          "essentialTopics": [
+            "Carbon structure and reactions",
+            "Nuclear changes",
+            "Energy and applications"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Broad families are intentional: confirm NY-specific added performance expectations in the Chemistry PLDs before exact-code tagging.",
+        "Do not present legacy Physical Setting/Chemistry as the current course."
+      ]
+    },
+    "physics": {
+      "title": "Physical Science: Physics",
+      "framework": "NYSP12SLS adopted 2016; current Physical Science: Physics Regents",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/hs-science-learning-standards.pdf",
+        "https://www.nysed.gov/state-assessment/physical-science-physics",
+        "https://www.nysed.gov/sites/default/files/programs/state-assessment/physical-science-physics-plds.pdf"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Measurement vectors and motion",
+          "standards": [
+            "HS-PS2 family",
+            "HS-PS2-1"
+          ],
+          "essentialTopics": [
+            "Units and uncertainty",
+            "Vectors",
+            "Kinematics and graphs"
+          ]
+        },
+        {
+          "title": "Forces and Newton laws",
+          "standards": [
+            "HS-PS2 family"
+          ],
+          "essentialTopics": [
+            "Free-body diagrams",
+            "Equilibrium and acceleration",
+            "Friction"
+          ]
+        },
+        {
+          "title": "Momentum and collisions",
+          "standards": [
+            "HS-PS2 family"
+          ],
+          "essentialTopics": [
+            "Impulse",
+            "Conservation of momentum",
+            "Collision design"
+          ]
+        },
+        {
+          "title": "Gravity and circular motion",
+          "standards": [
+            "HS-PS2 family"
+          ],
+          "essentialTopics": [
+            "Centripetal acceleration",
+            "Gravitation",
+            "Orbital models"
+          ]
+        },
+        {
+          "title": "Work and energy",
+          "standards": [
+            "HS-PS3 family"
+          ],
+          "essentialTopics": [
+            "Energy conservation",
+            "Work and power",
+            "Thermal transfers"
+          ]
+        },
+        {
+          "title": "Electric fields and circuits",
+          "standards": [
+            "HS-PS2 family",
+            "HS-PS3 family"
+          ],
+          "essentialTopics": [
+            "Charge and fields",
+            "Potential and current",
+            "Circuit models"
+          ]
+        },
+        {
+          "title": "Magnetism and induction",
+          "standards": [
+            "HS-PS2 family",
+            "HS-PS3 family"
+          ],
+          "essentialTopics": [
+            "Magnetic interactions",
+            "Field models",
+            "Energy conversion"
+          ]
+        },
+        {
+          "title": "Mechanical waves",
+          "standards": [
+            "HS-PS4 family"
+          ],
+          "essentialTopics": [
+            "Wave relationships",
+            "Superposition",
+            "Sound and resonance"
+          ]
+        },
+        {
+          "title": "Light and electromagnetic waves",
+          "standards": [
+            "HS-PS4 family"
+          ],
+          "essentialTopics": [
+            "Reflection and refraction",
+            "Electromagnetic spectrum",
+            "Wave-particle evidence"
+          ]
+        },
+        {
+          "title": "Modern physics and technology",
+          "standards": [
+            "HS-PS4 family",
+            "HS-PS1 family",
+            "HS-ETS1 family"
+          ],
+          "essentialTopics": [
+            "Photons and energy levels",
+            "Nuclear processes",
+            "Communication and design"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Exact inclusion of NY-specific standards must be checked against Physics course-map/PLD details; broad families here do not imply all PS1 standards belong in Physics."
+      ]
+    },
+    "ela": {
+      "title": "English Language Arts",
+      "framework": "NYS Next Generation ELA Learning Standards 2017; current Next Generation Regents",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-ela-standards.pdf",
+        "https://www.nysed.gov/state-assessment/high-school-english-language-arts",
+        "https://www.nysed.gov/standards-instruction/english-language-arts"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Close reading and evidence",
+          "standards": [
+            "11-12R family"
+          ],
+          "essentialTopics": [
+            "Literal and inferential reading",
+            "Relevant evidence",
+            "Accurate summaries"
+          ]
+        },
+        {
+          "title": "Central ideas and literary development",
+          "standards": [
+            "11-12R family"
+          ],
+          "essentialTopics": [
+            "Theme and central idea",
+            "Character and conflict",
+            "Interaction of ideas"
+          ]
+        },
+        {
+          "title": "Language craft and structure",
+          "standards": [
+            "11-12R family",
+            "11-12L family"
+          ],
+          "essentialTopics": [
+            "Diction and figurative language",
+            "Structure and pacing",
+            "Tone and meaning"
+          ]
+        },
+        {
+          "title": "Perspective and rhetoric",
+          "standards": [
+            "11-12R family"
+          ],
+          "essentialTopics": [
+            "Point of view",
+            "Purpose and audience",
+            "Rhetorical choices"
+          ]
+        },
+        {
+          "title": "Arguments and source evaluation",
+          "standards": [
+            "11-12R family",
+            "11-12W family"
+          ],
+          "essentialTopics": [
+            "Claims and reasoning",
+            "Evidence credibility",
+            "Counterclaims"
+          ]
+        },
+        {
+          "title": "Text analysis writing",
+          "standards": [
+            "11-12W family",
+            "11-12R family"
+          ],
+          "essentialTopics": [
+            "Central idea and writing strategy",
+            "Evidence and explanation",
+            "Coherent analysis"
+          ]
+        },
+        {
+          "title": "Source-based argument writing",
+          "standards": [
+            "11-12W family"
+          ],
+          "essentialTopics": [
+            "Defensible position",
+            "Synthesis and citation",
+            "Counterclaim response"
+          ]
+        },
+        {
+          "title": "Research discussion and presentation",
+          "standards": [
+            "11-12W family",
+            "11-12SL family"
+          ],
+          "essentialTopics": [
+            "Research questions",
+            "Ethical source use",
+            "Discussion and presentation"
+          ]
+        },
+        {
+          "title": "Revision and conventions",
+          "standards": [
+            "11-12L family",
+            "11-12W family"
+          ],
+          "essentialTopics": [
+            "Organization and transitions",
+            "Precise language",
+            "Grammar usage and editing"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Skill sequence, not a mandated reading list. Use complex literary and informational texts throughout.",
+        "Speaking/listening and research extend beyond the timed written examination."
+      ]
+    },
+    "global": {
+      "title": "Global History and Geography II",
+      "framework": "NYS K-12 Social Studies Framework Grades 9–12 with 2017 updates",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/framework-9-12-with-2017-updates.pdf",
+        "https://www.nysed.gov/state-assessment/high-school-social-studies",
+        "https://www.nysed.gov/sites/default/files/programs/state-assessment/educator-guide-ghg2-19.pdf"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "The world around 1750",
+          "standards": [
+            "10.1"
+          ],
+          "essentialTopics": [
+            "States and empires",
+            "Regional interactions",
+            "Trade networks"
+          ]
+        },
+        {
+          "title": "Enlightenment revolutions and nationalism",
+          "standards": [
+            "10.2"
+          ],
+          "essentialTopics": [
+            "Rights and political ideas",
+            "Atlantic revolutions",
+            "National unification"
+          ]
+        },
+        {
+          "title": "Industrialization",
+          "standards": [
+            "10.3"
+          ],
+          "essentialTopics": [
+            "Industrial production",
+            "Urbanization and labor",
+            "Economic ideas"
+          ]
+        },
+        {
+          "title": "Imperialism",
+          "standards": [
+            "10.4"
+          ],
+          "essentialTopics": [
+            "Motives and methods",
+            "Colonial impacts",
+            "Resistance"
+          ]
+        },
+        {
+          "title": "Global crisis and world wars",
+          "standards": [
+            "10.5"
+          ],
+          "essentialTopics": [
+            "World War I",
+            "Interwar ideologies",
+            "World War II and Holocaust"
+          ]
+        },
+        {
+          "title": "Cold War",
+          "standards": [
+            "10.6"
+          ],
+          "essentialTopics": [
+            "Superpower rivalry",
+            "Proxy conflicts",
+            "Collapse of Soviet bloc"
+          ]
+        },
+        {
+          "title": "Decolonization and nationalism",
+          "standards": [
+            "10.7"
+          ],
+          "essentialTopics": [
+            "Independence movements",
+            "Partition and conflict",
+            "Postcolonial challenges"
+          ]
+        },
+        {
+          "title": "Tensions between tradition and modernization",
+          "standards": [
+            "10.8"
+          ],
+          "essentialTopics": [
+            "Political and social change",
+            "Religion and identity",
+            "Regional comparisons"
+          ]
+        },
+        {
+          "title": "Globalization and contemporary change",
+          "standards": [
+            "10.9"
+          ],
+          "essentialTopics": [
+            "Economic integration",
+            "Technology and environment",
+            "Security and migration"
+          ]
+        },
+        {
+          "title": "Human rights and historical argument",
+          "standards": [
+            "10.10",
+            "Social Studies Practices A–F"
+          ],
+          "essentialTopics": [
+            "Rights principles and violations",
+            "Source contextualization",
+            "Enduring-issues argument"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Source analysis, causation, comparison, geography, and evidence-based writing recur in every unit."
+      ]
+    },
+    "us": {
+      "title": "United States History and Government",
+      "framework": "NYS K-12 Social Studies Framework Grades 9–12 with 2017 updates",
+      "verifiedOn": "2026-10-19",
+      "sources": [
+        "https://www.nysed.gov/sites/default/files/programs/standards-instruction/framework-9-12-with-2017-updates.pdf",
+        "https://www.nysed.gov/sites/default/files/programs/state-assessment/educator-guide-us-history-govt-2022.pdf",
+        "https://www.nysed.gov/state-assessment/high-school-social-studies"
+      ],
+      "standardsGranularity": "Domain/standard families, except social studies Key Ideas. These are instructional groupings, not a verified item-by-item alignment.",
+      "sequenceNote": "DECODED suggested teaching sequence. NYSED learning standards do not prescribe one unit order.",
+      "units": [
+        {
+          "title": "Colonial foundations",
+          "standards": [
+            "11.1"
+          ],
+          "essentialTopics": [
+            "Indigenous-European encounters",
+            "Regional economies",
+            "Slavery and colonial society"
+          ]
+        },
+        {
+          "title": "Revolution and constitutional foundations",
+          "standards": [
+            "11.2"
+          ],
+          "essentialTopics": [
+            "Independence",
+            "Articles and Constitution",
+            "Federalism and rights"
+          ]
+        },
+        {
+          "title": "Expansion nationalism and Civil War",
+          "standards": [
+            "11.3"
+          ],
+          "essentialTopics": [
+            "Political development",
+            "Territorial expansion",
+            "Sectional conflict and Civil War"
+          ]
+        },
+        {
+          "title": "Post-Civil War era",
+          "standards": [
+            "11.4"
+          ],
+          "essentialTopics": [
+            "Reconstruction amendments",
+            "Segregation and resistance",
+            "Western expansion and Native peoples"
+          ]
+        },
+        {
+          "title": "Industrialization and Progressive reform",
+          "standards": [
+            "11.5"
+          ],
+          "essentialTopics": [
+            "Business and labor",
+            "Immigration and urbanization",
+            "Progressive reform"
+          ]
+        },
+        {
+          "title": "Rise of American power",
+          "standards": [
+            "11.6"
+          ],
+          "essentialTopics": [
+            "Imperialism debates",
+            "World War I",
+            "Diplomacy and civil liberties"
+          ]
+        },
+        {
+          "title": "Prosperity and depression",
+          "standards": [
+            "11.7"
+          ],
+          "essentialTopics": [
+            "1920s cultural change",
+            "Great Depression",
+            "New Deal and federal power"
+          ]
+        },
+        {
+          "title": "World War II",
+          "standards": [
+            "11.8"
+          ],
+          "essentialTopics": [
+            "Isolation to intervention",
+            "War and home front",
+            "Holocaust and postwar leadership"
+          ]
+        },
+        {
+          "title": "Cold War foreign policy",
+          "standards": [
+            "11.9"
+          ],
+          "essentialTopics": [
+            "Containment",
+            "Korea and Vietnam",
+            "End of Cold War"
+          ]
+        },
+        {
+          "title": "Rights and domestic change",
+          "standards": [
+            "11.10"
+          ],
+          "essentialTopics": [
+            "Civil rights movements",
+            "Federal policy debates",
+            "Social and economic change"
+          ]
+        },
+        {
+          "title": "United States in a globalizing world",
+          "standards": [
+            "11.11",
+            "Social Studies Practices A–F"
+          ],
+          "essentialTopics": [
+            "Post-1990 foreign and domestic challenges",
+            "Global economy and technology",
+            "Source analysis and civic-issue argument"
+          ]
+        }
+      ],
+      "caveats": [
+        "Full course breadth map; does not establish that every performance expectation has a completed lesson or assessment.",
+        "Standards PDFs were indexed by web search but direct retrieval returned gateway errors; verify exact subcodes against the linked original before publishing a precise crosswalk.",
+        "Unit groupings follow the eleven Grade 11 Key Ideas, with constitutional change threaded across time.",
+        "Civic literacy, constitutional reasoning, contextualization, and short evidence-based essays recur throughout."
+      ]
+    }
+  },
+  "examNotes": {
+    "algebra1": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "geometry": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "algebra2": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "biology": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "chemistry": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "Verified cover identifies Physical Science (NYSP12SLS); this is the new science examination, not the legacy Physical Setting examination.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "physics": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "Verified cover identifies Physical Science (NYSP12SLS); this is the new science examination, not the legacy Physical Setting examination.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "earth": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "ela": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "Scoring key explicitly marked Updated, 8/18/2026; use this corrected key. Third-party passages remain in the official NYSED paper; this index copies no passages or question wording.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "us": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "global": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ]
+  },
+  "limitations": [
+    "Suggested study order is DECODED’s, not a state-mandated unit order.",
+    "Individual performance-expectation alignment and classroom case-study depth need further review.",
+    "Exam item index is selected, not every historical paper; source documents remain on NYSED.",
+    "Digital models do not replace required classroom investigations or teacher evaluation."
+  ]
+}

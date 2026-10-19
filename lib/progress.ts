@@ -1,31 +1,17 @@
-import catalog from "./course-catalog.json";
-const topicQuestions:Record<string,number[]>=Object.fromEntries(Object.entries(catalog.topics).map(([id,t])=>[id,t.questions]));
-const ids=new Set(Object.keys(topicQuestions));
-const date=(v:unknown):v is string=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v);
-const bounded=(v:unknown,max:number)=>typeof v==='number'&&Number.isFinite(v)?Math.max(0,Math.min(max,Math.floor(v))):0;
-const list=(v:unknown,max:number)=>Array.isArray(v)?[...new Set(v.filter(n=>Number.isInteger(n)&&n>=0&&n<max))]:[];
+import manifest from './learning-manifest.json';
+const courses=new Set(Object.keys(manifest.courses)),lessons=new Set(manifest.lessons),cards=new Set(manifest.cards),models=new Set(manifest.models),items=new Set(manifest.examItems);
+const day=(v:unknown):v is string=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v);
+const num=(v:unknown,max:number)=>typeof v==='number'&&Number.isFinite(v)?Math.max(0,Math.min(max,Math.floor(v))):0;
+const strings=(v:unknown,allowed:Set<string>,limit=1000)=>Array.isArray(v)?[...new Set(v.filter((s):s is string=>typeof s==='string'&&allowed.has(s)))].slice(0,limit):[];
 export function cleanProgress(p:unknown){
  if(!p||typeof p!=='object'||Array.isArray(p))return null;
- const x=p as Record<string,unknown>;
- const done=Array.isArray(x.done)?[...new Set(x.done.filter(n=>typeof n==='string'&&ids.has(n)))]:[];
- const days=Array.isArray(x.days)?[...new Set(x.days.filter(date))].sort().slice(-366):[];
- const review:Record<string,{due:string,last:string,streak:number}>={};
- if(x.review&&typeof x.review==='object'&&!Array.isArray(x.review)){
-  for(const [id,value]of Object.entries(x.review).slice(0,catalog.cards)){
-   if(!/^\d+$/.test(id)||Number(id)>=catalog.cards||!value||typeof value!=='object')continue;
-   const v=value as Record<string,unknown>;
-   if(date(v.due)&&date(v.last))review[id]={due:v.due,last:v.last,streak:bounded(v.streak,4)};
-  }
+ const x=p as Record<string,unknown>;if(x.schema!==3)return {schema:3,state:null,courses:[],activeCourse:null,done:[],vocabKnown:[],modelsDone:[],placements:{},unitByCourse:{},xp:0,days:[],daily:0,dailyDate:'',goal:20,reading:'medium',tutorialDone:false,tutorialStep:0,resume:null,awards:[],examAttempts:[]};
+ const enrolled=strings(x.courses,courses,10),courseMap=manifest.courses as Record<string,{units:string[],lessons:string[]}>;
+ const unitByCourse:Record<string,string>={},placements:Record<string,unknown>={};
+ for(const id of enrolled){const us=courseMap[id].units;const u=(x.unitByCourse as Record<string,unknown>)?.[id];if(typeof u==='string'&&us.includes(u))unitByCourse[id]=u;
+  const raw=(x.placements as Record<string,unknown>)?.[id];if(raw&&typeof raw==='object'){const r=raw as Record<string,unknown>;placements[id]={method:r.method==='diagnostic'?'diagnostic':'fresh',recommended:typeof r.recommended==='string'&&us.includes(r.recommended)?r.recommended:us[0],answered:num(r.answered,100),correct:num(r.correct,100),skipped:num(r.skipped,100),date:day(r.date)?r.date:''}}
  }
- let resume=null;
- if(x.resume&&typeof x.resume==='object'&&!Array.isArray(x.resume)){
-  const r=x.resume as Record<string,unknown>;
-  if(typeof r.id==='string'&&ids.has(r.id)&&['learn','model','question'].includes(String(r.stage))&&Array.isArray(r.questionIds)&&r.questionIds.length>0&&r.questionIds.length<=3&&r.questionIds.every(n=>Number.isInteger(n)&&topicQuestions[r.id as string].includes(n))){
-   const partMax:Record<string,number>=Object.fromEntries(Object.entries(catalog.topics).map(([id,t])=>[id,t.partMax]));
-   const questionIds=[...new Set(r.questionIds)];
-   const selected=Number.isInteger(r.selected)&&Number(r.selected)>=0&&Number(r.selected)<4?r.selected as number:null;
-   resume={id:r.id,stage:r.stage,part:bounded(r.part,partMax[r.id]),qindex:bounded(r.qindex,questionIds.length-1),questionIds,selected,revealed:r.revealed===true&&selected!==null,firstTry:bounded(r.firstTry,3),missed:list(r.missed,catalog.questions).filter(id=>topicQuestions[r.id as string].includes(id))};
-  }
- }
- return {lessonSchema:x.lessonSchema===2?2:1,flashcardSchema:x.flashcardSchema===2?2:1,subject:x.subject==='geometry'?'geometry':'biology',unit:x.subject==='geometry'&&[1,2,3,4].includes(Number(x.unit))?Number(x.unit):x.subject==='geometry'?1:2,review,resume,readingLevel:['easy','medium','expert'].includes(String(x.readingLevel))?String(x.readingLevel):'medium',done,known:list(x.known,catalog.cards),missed:list(x.missed,catalog.questions),xp:bounded(x.xp,1000000),days,goal:[10,20,30].includes(Number(x.goal))?Number(x.goal):20,daily:bounded(x.daily,100000),dailyDate:date(x.dailyDate)?x.dailyDate:'',awards:Array.isArray(x.awards)?[...new Set(x.awards.filter(a=>typeof a==='string'&&/^(lesson|practice):[a-z0-9-]{1,30}$/.test(a)))].slice(-100):[]};
+ let resume=null;if(x.resume&&typeof x.resume==='object'){const r=x.resume as Record<string,unknown>;if(typeof r.lesson==='string'&&lessons.has(r.lesson))resume={lesson:r.lesson,stage:num(r.stage,2),selected:r.selected===null?null:num(r.selected,3),checked:r.checked===true,reflection:typeof r.reflection==='string'?r.reflection.slice(0,2500):''}}
+ const attempts=Array.isArray(x.examAttempts)?x.examAttempts.filter(a=>a&&typeof a==='object'&&items.has(a.id)&&[1,2,3,4].includes(a.answer)&&typeof a.correct==='boolean'&&day(a.date)).slice(-300).map(a=>({id:a.id,answer:a.answer,correct:a.correct,date:a.date})):[];
+ return {schema:3,state:x.state==='NY'?'NY':null,courses:enrolled,activeCourse:typeof x.activeCourse==='string'&&enrolled.includes(x.activeCourse)?x.activeCourse:enrolled[0]||null,unitByCourse,placements,done:strings(x.done,lessons),vocabKnown:strings(x.vocabKnown,cards),modelsDone:strings(x.modelsDone,models),resume,xp:num(x.xp,1000000),days:Array.isArray(x.days)?[...new Set(x.days.filter(day))].sort().slice(-366):[],daily:num(x.daily,100000),dailyDate:day(x.dailyDate)?x.dailyDate:'',goal:[10,20,30].includes(Number(x.goal))?Number(x.goal):20,reading:['easy','medium','expert'].includes(String(x.reading))?String(x.reading):'medium',tutorialDone:x.tutorialDone===true,tutorialStep:num(x.tutorialStep,5),awards:Array.isArray(x.awards)?[...new Set(x.awards.filter(a=>typeof a==='string'&&/^[a-z0-9:-]{1,110}$/.test(a)))].slice(-800):[],examAttempts:attempts};
 }

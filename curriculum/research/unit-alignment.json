@@ -1,0 +1,361 @@
+{
+  "algebra1": {
+    "algebra1-u1": [
+      "AI-N.Q family",
+      "AI-N.RN family",
+      "AI-A.SSE family"
+    ],
+    "algebra1-u2": [
+      "AI-A.CED family",
+      "AI-A.REI family"
+    ],
+    "algebra1-u3": [
+      "AI-F.IF family",
+      "AI-F.BF family",
+      "AI-F.LE family",
+      "AI-A.REI family"
+    ],
+    "algebra1-u4": [
+      "AI-F.IF family",
+      "AI-F.BF family"
+    ],
+    "algebra1-u5": [
+      "AI-A.APR family",
+      "AI-A.SSE family",
+      "AI-A.REI family"
+    ],
+    "algebra1-u6": [
+      "AI-F.IF family",
+      "AI-A.REI family"
+    ],
+    "algebra1-u7": [
+      "AI-F.LE family",
+      "AI-F.BF family",
+      "AI-F.IF family"
+    ],
+    "algebra1-u8": [
+      "AI-S.ID family"
+    ]
+  },
+  "geometry": {
+    "geometry-u1": [
+      "GEO-G.CO family",
+      "GEO-G.GPE family"
+    ],
+    "geometry-u2": [
+      "GEO-G.CO family"
+    ],
+    "geometry-u3": [
+      "GEO-G.CO family"
+    ],
+    "geometry-u4": [
+      "GEO-G.SRT family"
+    ],
+    "geometry-u5": [
+      "GEO-G.SRT family"
+    ],
+    "geometry-u6": [
+      "GEO-G.GPE family",
+      "GEO-G.CO family"
+    ],
+    "geometry-u7": [
+      "GEO-G.C family",
+      "GEO-G.GPE family"
+    ],
+    "geometry-u8": [
+      "GEO-G.GMD family",
+      "GEO-G.MG family"
+    ]
+  },
+  "algebra2": {
+    "algebra2-u1": [
+      "AII-F.IF family",
+      "AII-F.BF family",
+      "AII-A.SSE family"
+    ],
+    "algebra2-u2": [
+      "AII-A.APR family",
+      "AII-A.SSE family",
+      "AII-N.CN family",
+      "AII-A.REI family"
+    ],
+    "algebra2-u3": [
+      "AII-A.APR family",
+      "AII-A.REI family",
+      "AII-F.IF family",
+      "AII-N.RN family"
+    ],
+    "algebra2-u4": [
+      "AII-F.LE family",
+      "AII-F.BF family"
+    ],
+    "algebra2-u5": [
+      "AII-F.TF family"
+    ],
+    "algebra2-u6": [
+      "AII-A.REI family",
+      "AII-F.IF family",
+      "AII-F.LE family"
+    ],
+    "algebra2-u7": [
+      "AII-S.CP family"
+    ],
+    "algebra2-u8": [
+      "AII-S.ID family",
+      "AII-S.IC family"
+    ]
+  },
+  "biology": {
+    "biology-u1": [
+      "Science and Engineering Practices",
+      "HS-LS1 family"
+    ],
+    "biology-u2": [
+      "HS-LS1 family"
+    ],
+    "biology-u3": [
+      "HS-LS1 family"
+    ],
+    "biology-u4": [
+      "HS-LS1 family"
+    ],
+    "biology-u5": [
+      "HS-LS1 family",
+      "HS-LS3 family"
+    ],
+    "biology-u6": [
+      "HS-LS1 family",
+      "HS-LS3 family"
+    ],
+    "biology-u7": [
+      "HS-LS4 family",
+      "HS-ESS2-7"
+    ],
+    "biology-u8": [
+      "HS-LS2 family",
+      "HS-ESS2-6",
+      "HS-LS2-8"
+    ],
+    "biology-u9": [
+      "HS-LS2 family",
+      "HS-LS4 family"
+    ]
+  },
+  "earth": {
+    "earth-u1": [
+      "Science and Engineering Practices",
+      "HS-ESS2 family"
+    ],
+    "earth-u2": [
+      "HS-ESS1 family"
+    ],
+    "earth-u3": [
+      "HS-ESS1 family",
+      "HS-ESS1-4",
+      "HS-ESS1-7"
+    ],
+    "earth-u4": [
+      "HS-ESS1 family",
+      "HS-ESS2 family"
+    ],
+    "earth-u5": [
+      "HS-ESS2 family",
+      "HS-ESS3 family"
+    ],
+    "earth-u6": [
+      "HS-ESS2 family"
+    ],
+    "earth-u7": [
+      "HS-ESS2 family"
+    ],
+    "earth-u8": [
+      "HS-ESS2 family",
+      "HS-ESS3 family"
+    ],
+    "earth-u9": [
+      "HS-ESS3 family",
+      "HS-ETS1 family"
+    ]
+  },
+  "chemistry": {
+    "chemistry-u1": [
+      "Science and Engineering Practices",
+      "HS-PS1 family"
+    ],
+    "chemistry-u2": [
+      "HS-PS1 family"
+    ],
+    "chemistry-u3": [
+      "HS-PS1 family",
+      "HS-PS1-1"
+    ],
+    "chemistry-u4": [
+      "HS-PS1 family",
+      "HS-PS1-3"
+    ],
+    "chemistry-u5": [
+      "HS-PS1 family"
+    ],
+    "chemistry-u6": [
+      "HS-PS1 family",
+      "HS-PS3 family"
+    ],
+    "chemistry-u7": [
+      "HS-PS1 family",
+      "HS-PS3 family"
+    ],
+    "chemistry-u8": [
+      "HS-PS1 family"
+    ],
+    "chemistry-u9": [
+      "HS-PS1 family"
+    ]
+  },
+  "physics": {
+    "physics-u1": [
+      "HS-PS2 family",
+      "HS-PS2-1",
+      "Science and Engineering Practices"
+    ],
+    "physics-u2": [
+      "HS-PS2 family",
+      "HS-PS2-1"
+    ],
+    "physics-u3": [
+      "HS-PS2 family"
+    ],
+    "physics-u4": [
+      "HS-PS2 family"
+    ],
+    "physics-u5": [
+      "HS-PS3 family"
+    ],
+    "physics-u6": [
+      "HS-PS4 family"
+    ],
+    "physics-u7": [
+      "HS-PS2 family",
+      "HS-PS3 family"
+    ],
+    "physics-u8": [
+      "HS-PS2 family",
+      "HS-PS3 family",
+      "HS-PS4 family",
+      "HS-PS1 family"
+    ],
+    "physics-u9": [
+      "Science and Engineering Practices",
+      "HS-ETS1 family"
+    ]
+  },
+  "global": {
+    "global-u1": [
+      "10.1",
+      "Social Studies Practices A\u2013F"
+    ],
+    "global-u2": [
+      "10.2"
+    ],
+    "global-u3": [
+      "10.3"
+    ],
+    "global-u4": [
+      "10.4"
+    ],
+    "global-u5": [
+      "10.5"
+    ],
+    "global-u6": [
+      "10.5",
+      "10.10"
+    ],
+    "global-u7": [
+      "10.6"
+    ],
+    "global-u8": [
+      "10.7"
+    ],
+    "global-u9": [
+      "10.8"
+    ],
+    "global-u10": [
+      "10.10"
+    ],
+    "global-u11": [
+      "10.9",
+      "Social Studies Practices A\u2013F"
+    ]
+  },
+  "us": {
+    "us-u1": [
+      "11.1"
+    ],
+    "us-u2": [
+      "11.2"
+    ],
+    "us-u3": [
+      "11.3"
+    ],
+    "us-u4": [
+      "11.4"
+    ],
+    "us-u5": [
+      "11.5"
+    ],
+    "us-u6": [
+      "11.6"
+    ],
+    "us-u7": [
+      "11.7"
+    ],
+    "us-u8": [
+      "11.8"
+    ],
+    "us-u9": [
+      "11.9"
+    ],
+    "us-u10": [
+      "11.10"
+    ],
+    "us-u11": [
+      "11.11",
+      "Social Studies Practices A\u2013F"
+    ]
+  },
+  "ela": {
+    "ela-u1": [
+      "11-12R family"
+    ],
+    "ela-u2": [
+      "11-12R family",
+      "11-12L family"
+    ],
+    "ela-u3": [
+      "11-12R family"
+    ],
+    "ela-u4": [
+      "11-12R family"
+    ],
+    "ela-u5": [
+      "11-12R family",
+      "11-12W family"
+    ],
+    "ela-u6": [
+      "11-12W family"
+    ],
+    "ela-u7": [
+      "11-12W family",
+      "11-12R family"
+    ],
+    "ela-u8": [
+      "11-12W family",
+      "11-12R family",
+      "11-12SL family",
+      "11-12L family"
+    ],
+    "ela-u9": [
+      "11-12W family",
+      "11-12L family"
+    ]
+  }
+}

@@ -1,0 +1,1965 @@
+{
+  "algebra1": {
+    "paperUrl": "https://www.nysedregents.org/algebraone/826/algone-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/algebraone/826/algone-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Exponential growth",
+        "answer": 3,
+        "unitId": "algebra1-u7",
+        "unitIds": [
+          "algebra1-u7"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Linear equations",
+        "answer": 1,
+        "unitId": "algebra1-u2",
+        "unitIds": [
+          "algebra1-u2"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Systems by substitution",
+        "answer": 1,
+        "unitId": "algebra1-u3",
+        "unitIds": [
+          "algebra1-u3"
+        ]
+      },
+      {
+        "number": 4,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Writing inequalities",
+        "answer": 2,
+        "unitId": "algebra1-u2",
+        "unitIds": [
+          "algebra1-u2"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Exponential decay",
+        "answer": 4,
+        "unitId": "algebra1-u7",
+        "unitIds": [
+          "algebra1-u7"
+        ]
+      },
+      {
+        "number": 6,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Difference of squares",
+        "answer": 3,
+        "unitId": "algebra1-u5",
+        "unitIds": [
+          "algebra1-u5"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Scatter plots and estimation",
+        "answer": 2,
+        "unitId": "algebra1-u8",
+        "unitIds": [
+          "algebra1-u8"
+        ]
+      },
+      {
+        "number": 8,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Quadratic axis of symmetry",
+        "answer": 4,
+        "unitId": "algebra1-u6",
+        "unitIds": [
+          "algebra1-u6"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Properties of equality",
+        "answer": 2,
+        "unitId": "algebra1-u2",
+        "unitIds": [
+          "algebra1-u2"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Polynomial standard form",
+        "answer": 2,
+        "unitId": "algebra1-u5",
+        "unitIds": [
+          "algebra1-u5"
+        ]
+      },
+      {
+        "number": 11,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Evaluating functions",
+        "answer": 4,
+        "unitId": "algebra1-u4",
+        "unitIds": [
+          "algebra1-u4"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Proportional reasoning and units",
+        "answer": 4,
+        "unitId": "algebra1-u1",
+        "unitIds": [
+          "algebra1-u1"
+        ]
+      },
+      {
+        "number": 13,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "Rational and irrational products",
+        "answer": 1,
+        "unitId": "algebra1-u1",
+        "unitIds": [
+          "algebra1-u1"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": []
+  },
+  "geometry": {
+    "paperUrl": "https://www.nysedregents.org/geometryre/826/geom-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/geometryre/826/geom-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Rigid motions and congruence",
+        "answer": 3,
+        "unitId": "geometry-u2",
+        "unitIds": [
+          "geometry-u2"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Right triangle trigonometry",
+        "answer": 2,
+        "unitId": "geometry-u5",
+        "unitIds": [
+          "geometry-u5"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Congruent corresponding parts",
+        "answer": 4,
+        "unitId": "geometry-u2",
+        "unitIds": [
+          "geometry-u2",
+          "geometry-u3"
+        ]
+      },
+      {
+        "number": 4,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Sphere volume and density",
+        "answer": 3,
+        "unitId": "geometry-u8",
+        "unitIds": [
+          "geometry-u8"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Triangle centroid",
+        "answer": 1,
+        "unitId": "geometry-u3",
+        "unitIds": [
+          "geometry-u3"
+        ]
+      },
+      {
+        "number": 6,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Solids of revolution",
+        "answer": 3,
+        "unitId": "geometry-u8",
+        "unitIds": [
+          "geometry-u8"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Exterior angle theorem",
+        "answer": 3,
+        "unitId": "geometry-u3",
+        "unitIds": [
+          "geometry-u3"
+        ]
+      },
+      {
+        "number": 8,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Reflection symmetry",
+        "answer": 1,
+        "unitId": "geometry-u2",
+        "unitIds": [
+          "geometry-u2"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "Pyramid volume",
+        "answer": 1,
+        "unitId": "geometry-u8",
+        "unitIds": [
+          "geometry-u8"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 6,
+        "stimulusStart": 6,
+        "stimulusEnd": 6,
+        "topic": "Partitioning a segment",
+        "answer": 4,
+        "unitId": "geometry-u6",
+        "unitIds": [
+          "geometry-u6"
+        ]
+      },
+      {
+        "number": 14,
+        "page": 7,
+        "stimulusStart": 7,
+        "stimulusEnd": 7,
+        "topic": "Parallelogram angles",
+        "answer": 2,
+        "unitId": "geometry-u6",
+        "unitIds": [
+          "geometry-u6"
+        ]
+      },
+      {
+        "number": 15,
+        "page": 8,
+        "stimulusStart": 8,
+        "stimulusEnd": 8,
+        "topic": "Coordinate perimeter and radicals",
+        "answer": 1,
+        "unitId": "geometry-u5",
+        "unitIds": [
+          "geometry-u5",
+          "geometry-u6"
+        ]
+      },
+      {
+        "number": 16,
+        "page": 8,
+        "stimulusStart": 8,
+        "stimulusEnd": 8,
+        "topic": "Perpendicular bisector slope",
+        "answer": 2,
+        "unitId": "geometry-u1",
+        "unitIds": [
+          "geometry-u1",
+          "geometry-u6"
+        ]
+      },
+      {
+        "number": 18,
+        "page": 9,
+        "stimulusStart": 9,
+        "stimulusEnd": 9,
+        "topic": "Equation of a circle",
+        "answer": 2,
+        "unitId": "geometry-u7",
+        "unitIds": [
+          "geometry-u7"
+        ]
+      },
+      {
+        "number": 21,
+        "page": 10,
+        "stimulusStart": 10,
+        "stimulusEnd": 10,
+        "topic": "Dilation and perimeter",
+        "answer": 4,
+        "unitId": "geometry-u4",
+        "unitIds": [
+          "geometry-u4"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": []
+  },
+  "algebra2": {
+    "paperUrl": "https://www.nysedregents.org/algebratwo/826/algtwo-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/algebratwo/826/algtwo-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Complex numbers and radicals",
+        "answer": 3,
+        "unitId": "algebra2-u2",
+        "unitIds": [
+          "algebra2-u2"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Exponential graph features",
+        "answer": 2,
+        "unitId": "algebra2-u1",
+        "unitIds": [
+          "algebra2-u1",
+          "algebra2-u4"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Exponential functions from points",
+        "answer": 3,
+        "unitId": "algebra2-u4",
+        "unitIds": [
+          "algebra2-u4"
+        ]
+      },
+      {
+        "number": 4,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Probability addition rule",
+        "answer": 3,
+        "unitId": "algebra2-u7",
+        "unitIds": [
+          "algebra2-u7"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Comparing nonlinear functions",
+        "answer": 4,
+        "unitId": "algebra2-u6",
+        "unitIds": [
+          "algebra2-u6"
+        ]
+      },
+      {
+        "number": 6,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Recursive geometric sequences",
+        "answer": 3,
+        "unitId": "algebra2-u1",
+        "unitIds": [
+          "algebra2-u1"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Nonlinear systems and error analysis",
+        "answer": 3,
+        "unitId": "algebra2-u6",
+        "unitIds": [
+          "algebra2-u6"
+        ]
+      },
+      {
+        "number": 8,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Rational exponents",
+        "answer": 1,
+        "unitId": "algebra2-u3",
+        "unitIds": [
+          "algebra2-u3"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "Polynomial graph features",
+        "answer": 1,
+        "unitId": "algebra2-u1",
+        "unitIds": [
+          "algebra2-u1",
+          "algebra2-u2"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "Rational exponent equations",
+        "answer": 4,
+        "unitId": "algebra2-u3",
+        "unitIds": [
+          "algebra2-u3"
+        ]
+      },
+      {
+        "number": 11,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "Unit circle trigonometry",
+        "answer": 3,
+        "unitId": "algebra2-u5",
+        "unitIds": [
+          "algebra2-u5"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 6,
+        "stimulusStart": 6,
+        "stimulusEnd": 6,
+        "topic": "Exponential depreciation",
+        "answer": 4,
+        "unitId": "algebra2-u4",
+        "unitIds": [
+          "algebra2-u4"
+        ]
+      },
+      {
+        "number": 13,
+        "page": 6,
+        "stimulusStart": 6,
+        "stimulusEnd": 6,
+        "topic": "Two-way frequency tables",
+        "answer": 1,
+        "unitId": "algebra2-u7",
+        "unitIds": [
+          "algebra2-u7"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "algebra2-u8",
+        "title": "Statistics & inference"
+      }
+    ]
+  },
+  "biology": {
+    "paperUrl": "https://www.nysedregents.org/life_science_biology/826/lsbiology-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/life_science_biology/826/lsbiology-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 3,
+        "stimulusStart": 2,
+        "stimulusEnd": 3,
+        "topic": "Natural selection and adaptations",
+        "answer": 2,
+        "unitId": "biology-u7",
+        "unitIds": [
+          "biology-u7"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 3,
+        "stimulusStart": 2,
+        "stimulusEnd": 3,
+        "topic": "Interacting body systems",
+        "answer": 3,
+        "unitId": "biology-u4",
+        "unitIds": [
+          "biology-u4"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Mitosis and genetic continuity",
+        "answer": 4,
+        "unitId": "biology-u5",
+        "unitIds": [
+          "biology-u5"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 7,
+        "stimulusStart": 6,
+        "stimulusEnd": 7,
+        "topic": "Chemosynthesis and carbon cycling",
+        "answer": 4,
+        "unitId": "biology-u3",
+        "unitIds": [
+          "biology-u3",
+          "biology-u8"
+        ]
+      },
+      {
+        "number": 6,
+        "page": 7,
+        "stimulusStart": 6,
+        "stimulusEnd": 7,
+        "topic": "Energy flow and cellular respiration",
+        "answer": 4,
+        "unitId": "biology-u3",
+        "unitIds": [
+          "biology-u3",
+          "biology-u8"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 8,
+        "stimulusStart": 6,
+        "stimulusEnd": 8,
+        "topic": "Food webs and human impacts",
+        "answer": 3,
+        "unitId": "biology-u8",
+        "unitIds": [
+          "biology-u8",
+          "biology-u9"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 11,
+        "stimulusStart": 10,
+        "stimulusEnd": 11,
+        "topic": "Inherited variation and mutations",
+        "answer": 1,
+        "unitId": "biology-u6",
+        "unitIds": [
+          "biology-u6"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 13,
+        "stimulusStart": 10,
+        "stimulusEnd": 13,
+        "topic": "Gene regulation and inheritance",
+        "answer": 4,
+        "unitId": "biology-u6",
+        "unitIds": [
+          "biology-u6"
+        ]
+      },
+      {
+        "number": 13,
+        "page": 15,
+        "stimulusStart": 14,
+        "stimulusEnd": 15,
+        "topic": "Fungal nutrition and energy",
+        "answer": 3,
+        "unitId": "biology-u3",
+        "unitIds": [
+          "biology-u3"
+        ]
+      },
+      {
+        "number": 14,
+        "page": 17,
+        "stimulusStart": 14,
+        "stimulusEnd": 17,
+        "topic": "Sexual reproduction and genetic variation",
+        "answer": 2,
+        "unitId": "biology-u5",
+        "unitIds": [
+          "biology-u5"
+        ]
+      },
+      {
+        "number": 26,
+        "page": 29,
+        "stimulusStart": 29,
+        "stimulusEnd": 29,
+        "topic": "Cell differentiation and development",
+        "answer": 3,
+        "unitId": "biology-u5",
+        "unitIds": [
+          "biology-u5"
+        ]
+      },
+      {
+        "number": 27,
+        "page": 30,
+        "stimulusStart": 29,
+        "stimulusEnd": 30,
+        "topic": "Meiosis and inherited variation",
+        "answer": 1,
+        "unitId": "biology-u5",
+        "unitIds": [
+          "biology-u5"
+        ]
+      },
+      {
+        "number": 30,
+        "page": 32,
+        "stimulusStart": 32,
+        "stimulusEnd": 32,
+        "topic": "Plant transport systems",
+        "answer": 4,
+        "unitId": "biology-u4",
+        "unitIds": [
+          "biology-u4"
+        ]
+      },
+      {
+        "number": 31,
+        "page": 33,
+        "stimulusStart": 32,
+        "stimulusEnd": 33,
+        "topic": "Photosynthesis inputs and outputs",
+        "answer": 2,
+        "unitId": "biology-u3",
+        "unitIds": [
+          "biology-u3"
+        ]
+      },
+      {
+        "number": 47,
+        "page": 51,
+        "stimulusStart": 49,
+        "stimulusEnd": 51,
+        "topic": "Ecosystem feedback and permafrost",
+        "answer": 2,
+        "unitId": "biology-u8",
+        "unitIds": [
+          "biology-u8",
+          "biology-u9"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "biology-u1",
+        "title": "Evidence, chemistry & biological systems"
+      },
+      {
+        "id": "biology-u2",
+        "title": "Cells, transport & enzymes"
+      }
+    ]
+  },
+  "chemistry": {
+    "paperUrl": "https://www.nysedregents.org/ps-chemistry/826/pschem-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/ps-chemistry/826/pschem-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Chemical versus nuclear energy",
+        "answer": 2,
+        "unitId": "chemistry-u2",
+        "unitIds": [
+          "chemistry-u2",
+          "chemistry-u7"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 3,
+        "stimulusStart": 2,
+        "stimulusEnd": 3,
+        "topic": "Exothermic energy transfer",
+        "answer": 4,
+        "unitId": "chemistry-u7",
+        "unitIds": [
+          "chemistry-u7"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Nuclear decay and isotopes",
+        "answer": 2,
+        "unitId": "chemistry-u2",
+        "unitIds": [
+          "chemistry-u2"
+        ]
+      },
+      {
+        "number": 8,
+        "page": 6,
+        "stimulusStart": 5,
+        "stimulusEnd": 6,
+        "topic": "Conservation of matter",
+        "answer": 3,
+        "unitId": "chemistry-u5",
+        "unitIds": [
+          "chemistry-u5"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 6,
+        "stimulusStart": 5,
+        "stimulusEnd": 6,
+        "topic": "Boiling point and dissolved particles",
+        "answer": 2,
+        "unitId": "chemistry-u6",
+        "unitIds": [
+          "chemistry-u6"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 7,
+        "stimulusStart": 7,
+        "stimulusEnd": 7,
+        "topic": "Electromagnetic spectra",
+        "answer": 2,
+        "unitId": "chemistry-u3",
+        "unitIds": [
+          "chemistry-u3"
+        ]
+      },
+      {
+        "number": 11,
+        "page": 7,
+        "stimulusStart": 7,
+        "stimulusEnd": 7,
+        "topic": "Radiation and living cells",
+        "answer": 1,
+        "unitId": "chemistry-u3",
+        "unitIds": [
+          "chemistry-u3"
+        ]
+      },
+      {
+        "number": 14,
+        "page": 11,
+        "stimulusStart": 10,
+        "stimulusEnd": 11,
+        "topic": "Periodic patterns and conductivity",
+        "answer": 4,
+        "unitId": "chemistry-u3",
+        "unitIds": [
+          "chemistry-u3"
+        ]
+      },
+      {
+        "number": 16,
+        "page": 12,
+        "stimulusStart": 10,
+        "stimulusEnd": 12,
+        "topic": "Valence electrons and oxidation states",
+        "answer": 2,
+        "unitId": "chemistry-u3",
+        "unitIds": [
+          "chemistry-u3"
+        ]
+      },
+      {
+        "number": 18,
+        "page": 15,
+        "stimulusStart": 14,
+        "stimulusEnd": 15,
+        "topic": "Thermal energy transfer",
+        "answer": 3,
+        "unitId": "chemistry-u7",
+        "unitIds": [
+          "chemistry-u7"
+        ]
+      },
+      {
+        "number": 21,
+        "page": 17,
+        "stimulusStart": 14,
+        "stimulusEnd": 17,
+        "topic": "Ion-water attractions",
+        "answer": 2,
+        "unitId": "chemistry-u4",
+        "unitIds": [
+          "chemistry-u4"
+        ]
+      },
+      {
+        "number": 22,
+        "page": 18,
+        "stimulusStart": 18,
+        "stimulusEnd": 18,
+        "topic": "Solubility and precipitation",
+        "answer": 3,
+        "unitId": "chemistry-u6",
+        "unitIds": [
+          "chemistry-u6"
+        ]
+      },
+      {
+        "number": 24,
+        "page": 18,
+        "stimulusStart": 18,
+        "stimulusEnd": 18,
+        "topic": "Chemical equilibrium",
+        "answer": 2,
+        "unitId": "chemistry-u7",
+        "unitIds": [
+          "chemistry-u7"
+        ]
+      },
+      {
+        "number": 30,
+        "page": 23,
+        "stimulusStart": 22,
+        "stimulusEnd": 23,
+        "topic": "Catalysts and reaction rates",
+        "answer": 3,
+        "unitId": "chemistry-u7",
+        "unitIds": [
+          "chemistry-u7"
+        ]
+      },
+      {
+        "number": 35,
+        "page": 27,
+        "stimulusStart": 26,
+        "stimulusEnd": 27,
+        "topic": "Intermolecular forces and boiling points",
+        "answer": 1,
+        "unitId": "chemistry-u4",
+        "unitIds": [
+          "chemistry-u4"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "Verified cover identifies Physical Science (NYSP12SLS); this is the new science examination, not the legacy Physical Setting examination.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "chemistry-u1",
+        "title": "Measurement & particle models"
+      },
+      {
+        "id": "chemistry-u8",
+        "title": "Acids, bases & electron transfer"
+      },
+      {
+        "id": "chemistry-u9",
+        "title": "Carbon chemistry & materials design"
+      }
+    ]
+  },
+  "physics": {
+    "paperUrl": "https://www.nysedregents.org/ps-physics/626/psphysics-62026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/ps-physics/626/psphysics-62026-sk.pdf",
+    "administration": "June 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 3,
+        "stimulusStart": 2,
+        "stimulusEnd": 3,
+        "topic": "Conservation of mechanical energy",
+        "answer": 2,
+        "unitId": "physics-u5",
+        "unitIds": [
+          "physics-u5"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 6,
+        "stimulusStart": 2,
+        "stimulusEnd": 6,
+        "topic": "Force diagrams and motion",
+        "answer": 1,
+        "unitId": "physics-u3",
+        "unitIds": [
+          "physics-u3"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 8,
+        "stimulusStart": 2,
+        "stimulusEnd": 8,
+        "topic": "Projectile motion",
+        "answer": 1,
+        "unitId": "physics-u2",
+        "unitIds": [
+          "physics-u2",
+          "physics-u3"
+        ]
+      },
+      {
+        "number": 6,
+        "page": 9,
+        "stimulusStart": 9,
+        "stimulusEnd": 9,
+        "topic": "Doppler effect",
+        "answer": 2,
+        "unitId": "physics-u6",
+        "unitIds": [
+          "physics-u6"
+        ]
+      },
+      {
+        "number": 8,
+        "page": 11,
+        "stimulusStart": 9,
+        "stimulusEnd": 11,
+        "topic": "Refraction of sound",
+        "answer": 3,
+        "unitId": "physics-u6",
+        "unitIds": [
+          "physics-u6"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 11,
+        "stimulusStart": 9,
+        "stimulusEnd": 11,
+        "topic": "Wave-particle models of light",
+        "answer": 2,
+        "unitId": "physics-u8",
+        "unitIds": [
+          "physics-u8"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 14,
+        "stimulusStart": 13,
+        "stimulusEnd": 14,
+        "topic": "Energy conversion efficiency",
+        "answer": 2,
+        "unitId": "physics-u5",
+        "unitIds": [
+          "physics-u5"
+        ]
+      },
+      {
+        "number": 14,
+        "page": 16,
+        "stimulusStart": 13,
+        "stimulusEnd": 16,
+        "topic": "Specific heat capacity",
+        "answer": 2,
+        "unitId": "physics-u5",
+        "unitIds": [
+          "physics-u5"
+        ]
+      },
+      {
+        "number": 15,
+        "page": 17,
+        "stimulusStart": 17,
+        "stimulusEnd": 17,
+        "topic": "Impulse and collision safety",
+        "answer": 1,
+        "unitId": "physics-u4",
+        "unitIds": [
+          "physics-u4",
+          "physics-u9"
+        ]
+      },
+      {
+        "number": 17,
+        "page": 19,
+        "stimulusStart": 17,
+        "stimulusEnd": 19,
+        "topic": "Impulse and momentum",
+        "answer": 1,
+        "unitId": "physics-u4",
+        "unitIds": [
+          "physics-u4"
+        ]
+      },
+      {
+        "number": 22,
+        "page": 22,
+        "stimulusStart": 21,
+        "stimulusEnd": 22,
+        "topic": "Photon energy and wavelength",
+        "answer": 1,
+        "unitId": "physics-u8",
+        "unitIds": [
+          "physics-u8"
+        ]
+      },
+      {
+        "number": 23,
+        "page": 23,
+        "stimulusStart": 21,
+        "stimulusEnd": 23,
+        "topic": "Mass-energy equivalence",
+        "answer": 4,
+        "unitId": "physics-u8",
+        "unitIds": [
+          "physics-u8"
+        ]
+      },
+      {
+        "number": 30,
+        "page": 35,
+        "stimulusStart": 34,
+        "stimulusEnd": 35,
+        "topic": "Electric fields",
+        "answer": 1,
+        "unitId": "physics-u7",
+        "unitIds": [
+          "physics-u7"
+        ]
+      },
+      {
+        "number": 33,
+        "page": 37,
+        "stimulusStart": 34,
+        "stimulusEnd": 37,
+        "topic": "Circuit resistance and current",
+        "answer": 4,
+        "unitId": "physics-u7",
+        "unitIds": [
+          "physics-u7"
+        ]
+      },
+      {
+        "number": 43,
+        "page": 48,
+        "stimulusStart": 46,
+        "stimulusEnd": 48,
+        "topic": "Mechanical waves",
+        "answer": 3,
+        "unitId": "physics-u6",
+        "unitIds": [
+          "physics-u6"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "Verified cover identifies Physical Science (NYSP12SLS); this is the new science examination, not the legacy Physical Setting examination.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "physics-u1",
+        "title": "Measurement, vectors & graphs"
+      }
+    ]
+  },
+  "earth": {
+    "paperUrl": "https://www.nysedregents.org/earth_space_sciences/826/ess-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/earth_space_sciences/826/ess-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Cyclic ocean tides",
+        "answer": 4,
+        "unitId": "earth-u3",
+        "unitIds": [
+          "earth-u3"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 3,
+        "stimulusStart": 2,
+        "stimulusEnd": 3,
+        "topic": "Moon phases and tides",
+        "answer": 2,
+        "unitId": "earth-u3",
+        "unitIds": [
+          "earth-u3"
+        ]
+      },
+      {
+        "number": 4,
+        "page": 6,
+        "stimulusStart": 2,
+        "stimulusEnd": 6,
+        "topic": "Earth rotation and geologic evidence",
+        "answer": 1,
+        "unitId": "earth-u3",
+        "unitIds": [
+          "earth-u3",
+          "earth-u4"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 9,
+        "stimulusStart": 7,
+        "stimulusEnd": 9,
+        "topic": "Evidence of impact craters",
+        "answer": 1,
+        "unitId": "earth-u4",
+        "unitIds": [
+          "earth-u4",
+          "earth-u5"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 9,
+        "stimulusStart": 7,
+        "stimulusEnd": 9,
+        "topic": "Constructive geologic processes",
+        "answer": 4,
+        "unitId": "earth-u4",
+        "unitIds": [
+          "earth-u4"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 10,
+        "stimulusStart": 7,
+        "stimulusEnd": 10,
+        "topic": "Cycling Earth materials",
+        "answer": 1,
+        "unitId": "earth-u4",
+        "unitIds": [
+          "earth-u4"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 11,
+        "stimulusStart": 11,
+        "stimulusEnd": 11,
+        "topic": "Plate motion and hotspots",
+        "answer": 4,
+        "unitId": "earth-u5",
+        "unitIds": [
+          "earth-u5"
+        ]
+      },
+      {
+        "number": 13,
+        "page": 13,
+        "stimulusStart": 11,
+        "stimulusEnd": 13,
+        "topic": "Atmospheric circulation and rainfall",
+        "answer": 2,
+        "unitId": "earth-u7",
+        "unitIds": [
+          "earth-u7"
+        ]
+      },
+      {
+        "number": 23,
+        "page": 28,
+        "stimulusStart": 28,
+        "stimulusEnd": 28,
+        "topic": "Carbon emissions and climate",
+        "answer": 3,
+        "unitId": "earth-u8",
+        "unitIds": [
+          "earth-u8",
+          "earth-u9"
+        ]
+      },
+      {
+        "number": 24,
+        "page": 29,
+        "stimulusStart": 28,
+        "stimulusEnd": 29,
+        "topic": "Carbon reservoirs and Earth spheres",
+        "answer": 1,
+        "unitId": "earth-u8",
+        "unitIds": [
+          "earth-u8"
+        ]
+      },
+      {
+        "number": 31,
+        "page": 36,
+        "stimulusStart": 34,
+        "stimulusEnd": 36,
+        "topic": "Desertification feedback",
+        "answer": 1,
+        "unitId": "earth-u6",
+        "unitIds": [
+          "earth-u6",
+          "earth-u8"
+        ]
+      },
+      {
+        "number": 37,
+        "page": 45,
+        "stimulusStart": 39,
+        "stimulusEnd": 45,
+        "topic": "Global ocean and atmospheric circulation",
+        "answer": 2,
+        "unitId": "earth-u7",
+        "unitIds": [
+          "earth-u7",
+          "earth-u8"
+        ]
+      },
+      {
+        "number": 40,
+        "page": 49,
+        "stimulusStart": 46,
+        "stimulusEnd": 49,
+        "topic": "Orbital velocity and gravitation",
+        "answer": 1,
+        "unitId": "earth-u3",
+        "unitIds": [
+          "earth-u3"
+        ]
+      },
+      {
+        "number": 47,
+        "page": 56,
+        "stimulusStart": 56,
+        "stimulusEnd": 56,
+        "topic": "Stellar nucleosynthesis",
+        "answer": 3,
+        "unitId": "earth-u2",
+        "unitIds": [
+          "earth-u2"
+        ]
+      },
+      {
+        "number": 49,
+        "page": 58,
+        "stimulusStart": 56,
+        "stimulusEnd": 58,
+        "topic": "Big Bang and expanding universe",
+        "answer": 1,
+        "unitId": "earth-u2",
+        "unitIds": [
+          "earth-u2"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "earth-u1",
+        "title": "Evidence, maps & system models"
+      }
+    ]
+  },
+  "ela": {
+    "paperUrl": "https://www.nysedregents.org/hsela/826/reela-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/hsela/826/reela-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Literary significance and textual evidence",
+        "answer": 3,
+        "unitId": "ela-u1",
+        "unitIds": [
+          "ela-u1"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Characterization through dialogue",
+        "answer": 1,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Typography and author craft",
+        "answer": 2,
+        "unitId": "ela-u4",
+        "unitIds": [
+          "ela-u4"
+        ]
+      },
+      {
+        "number": 4,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Character motivation and inference",
+        "answer": 4,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Vocabulary in context",
+        "answer": 4,
+        "unitId": "ela-u2",
+        "unitIds": [
+          "ela-u2"
+        ]
+      },
+      {
+        "number": 6,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Comparing characters",
+        "answer": 3,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Character motivation",
+        "answer": 2,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3"
+        ]
+      },
+      {
+        "number": 8,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Character response and inference",
+        "answer": 2,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 4,
+        "stimulusStart": 2,
+        "stimulusEnd": 4,
+        "topic": "Narrative development",
+        "answer": 1,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3",
+          "ela-u4"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 6,
+        "stimulusStart": 5,
+        "stimulusEnd": 6,
+        "topic": "Poetry speaker and observation",
+        "answer": 1,
+        "unitId": "ela-u3",
+        "unitIds": [
+          "ela-u3"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 6,
+        "stimulusStart": 5,
+        "stimulusEnd": 6,
+        "topic": "Vocabulary and context clues",
+        "answer": 1,
+        "unitId": "ela-u2",
+        "unitIds": [
+          "ela-u2"
+        ]
+      },
+      {
+        "number": 13,
+        "page": 6,
+        "stimulusStart": 5,
+        "stimulusEnd": 6,
+        "topic": "Imagery in poetry",
+        "answer": 3,
+        "unitId": "ela-u2",
+        "unitIds": [
+          "ela-u2"
+        ]
+      },
+      {
+        "number": 15,
+        "page": 9,
+        "stimulusStart": 7,
+        "stimulusEnd": 9,
+        "topic": "Informational central idea",
+        "answer": 4,
+        "unitId": "ela-u1",
+        "unitIds": [
+          "ela-u1"
+        ]
+      },
+      {
+        "number": 16,
+        "page": 9,
+        "stimulusStart": 7,
+        "stimulusEnd": 9,
+        "topic": "Figurative language and tone",
+        "answer": 2,
+        "unitId": "ela-u2",
+        "unitIds": [
+          "ela-u2"
+        ]
+      },
+      {
+        "number": 24,
+        "page": 9,
+        "stimulusStart": 7,
+        "stimulusEnd": 9,
+        "topic": "Structure and conclusion",
+        "answer": 1,
+        "unitId": "ela-u4",
+        "unitIds": [
+          "ela-u4"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "Scoring key explicitly marked Updated, 8/18/2026; use this corrected key. Third-party passages remain in the official NYSED paper; this index copies no passages or question wording.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "ela-u5",
+        "title": "Evaluate arguments & sources"
+      },
+      {
+        "id": "ela-u6",
+        "title": "Evidence-based argument writing"
+      },
+      {
+        "id": "ela-u7",
+        "title": "Text-analysis response"
+      },
+      {
+        "id": "ela-u8",
+        "title": "Revision, conventions & exam practice"
+      }
+    ]
+  },
+  "us": {
+    "paperUrl": "https://www.nysedregents.org/us-history-govt/826/ushg-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/us-history-govt/826/ushg-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Colonial self-government and document purpose",
+        "answer": 2,
+        "unitId": "us-u1",
+        "unitIds": [
+          "us-u1"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Declaration of Independence and natural rights",
+        "answer": 3,
+        "unitId": "us-u2",
+        "unitIds": [
+          "us-u2"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Constitutional checks and balances in appointments",
+        "answer": 2,
+        "unitId": "us-u2",
+        "unitIds": [
+          "us-u2"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Abolitionism and reform",
+        "answer": 4,
+        "unitId": "us-u3",
+        "unitIds": [
+          "us-u3"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "Civil War and civil liberties",
+        "answer": 3,
+        "unitId": "us-u3",
+        "unitIds": [
+          "us-u3"
+        ]
+      },
+      {
+        "number": 11,
+        "page": 6,
+        "stimulusStart": 6,
+        "stimulusEnd": 6,
+        "topic": "Reconstruction and economic opportunity",
+        "answer": 2,
+        "unitId": "us-u4",
+        "unitIds": [
+          "us-u4"
+        ]
+      },
+      {
+        "number": 13,
+        "page": 7,
+        "stimulusStart": 7,
+        "stimulusEnd": 7,
+        "topic": "Progressive regulation of business",
+        "answer": 4,
+        "unitId": "us-u5",
+        "unitIds": [
+          "us-u5"
+        ]
+      },
+      {
+        "number": 15,
+        "page": 8,
+        "stimulusStart": 8,
+        "stimulusEnd": 8,
+        "topic": "World War I trade and neutrality",
+        "answer": 3,
+        "unitId": "us-u6",
+        "unitIds": [
+          "us-u6"
+        ]
+      },
+      {
+        "number": 16,
+        "page": 9,
+        "stimulusStart": 9,
+        "stimulusEnd": 9,
+        "topic": "Wilson and the League of Nations",
+        "answer": 4,
+        "unitId": "us-u6",
+        "unitIds": [
+          "us-u6"
+        ]
+      },
+      {
+        "number": 17,
+        "page": 11,
+        "stimulusStart": 10,
+        "stimulusEnd": 11,
+        "topic": "World War II foreign policy debate",
+        "answer": 2,
+        "unitId": "us-u8",
+        "unitIds": [
+          "us-u8"
+        ]
+      },
+      {
+        "number": 19,
+        "page": 11,
+        "stimulusStart": 11,
+        "stimulusEnd": 11,
+        "topic": "Navajo code talkers",
+        "answer": 1,
+        "unitId": "us-u8",
+        "unitIds": [
+          "us-u8"
+        ]
+      },
+      {
+        "number": 21,
+        "page": 12,
+        "stimulusStart": 12,
+        "stimulusEnd": 12,
+        "topic": "Women and wartime employment",
+        "answer": 2,
+        "unitId": "us-u8",
+        "unitIds": [
+          "us-u8"
+        ]
+      },
+      {
+        "number": 23,
+        "page": 13,
+        "stimulusStart": 13,
+        "stimulusEnd": 13,
+        "topic": "Marshall Plan and Cold War",
+        "answer": 4,
+        "unitId": "us-u9",
+        "unitIds": [
+          "us-u9"
+        ]
+      },
+      {
+        "number": 24,
+        "page": 14,
+        "stimulusStart": 14,
+        "stimulusEnd": 14,
+        "topic": "Cuban missile crisis",
+        "answer": 4,
+        "unitId": "us-u9",
+        "unitIds": [
+          "us-u9"
+        ]
+      },
+      {
+        "number": 28,
+        "page": 16,
+        "stimulusStart": 16,
+        "stimulusEnd": 16,
+        "topic": "Electoral College and popular vote",
+        "answer": 2,
+        "unitId": "us-u11",
+        "unitIds": [
+          "us-u11"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "us-u7",
+        "title": "Prosperity, Depression & New Deal"
+      },
+      {
+        "id": "us-u10",
+        "title": "Domestic change & civil-rights movements"
+      }
+    ]
+  },
+  "global": {
+    "paperUrl": "https://www.nysedregents.org/ghg2/826/glhg2-82026-exam.pdf",
+    "keyUrl": "https://www.nysedregents.org/ghg2/826/glhg2-82026-sk.pdf",
+    "administration": "August 2026",
+    "items": [
+      {
+        "number": 1,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "Tokugawa political centralization",
+        "answer": 2,
+        "unitId": "global-u1",
+        "unitIds": [
+          "global-u1"
+        ]
+      },
+      {
+        "number": 2,
+        "page": 2,
+        "stimulusStart": 2,
+        "stimulusEnd": 2,
+        "topic": "French Revolution and political violence",
+        "answer": 1,
+        "unitId": "global-u2",
+        "unitIds": [
+          "global-u2"
+        ]
+      },
+      {
+        "number": 3,
+        "page": 3,
+        "stimulusStart": 3,
+        "stimulusEnd": 3,
+        "topic": "Catherine the Great and Enlightenment",
+        "answer": 2,
+        "unitId": "global-u2",
+        "unitIds": [
+          "global-u2"
+        ]
+      },
+      {
+        "number": 5,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Industrial Revolution and labor reform",
+        "answer": 4,
+        "unitId": "global-u3",
+        "unitIds": [
+          "global-u3"
+        ]
+      },
+      {
+        "number": 7,
+        "page": 4,
+        "stimulusStart": 4,
+        "stimulusEnd": 4,
+        "topic": "Italian nationalism and unification",
+        "answer": 2,
+        "unitId": "global-u2",
+        "unitIds": [
+          "global-u2"
+        ]
+      },
+      {
+        "number": 9,
+        "page": 5,
+        "stimulusStart": 5,
+        "stimulusEnd": 5,
+        "topic": "British imperialism in India",
+        "answer": 1,
+        "unitId": "global-u4",
+        "unitIds": [
+          "global-u4"
+        ]
+      },
+      {
+        "number": 10,
+        "page": 6,
+        "stimulusStart": 6,
+        "stimulusEnd": 6,
+        "topic": "Imperialism and political cartoons",
+        "answer": 4,
+        "unitId": "global-u4",
+        "unitIds": [
+          "global-u4"
+        ]
+      },
+      {
+        "number": 12,
+        "page": 7,
+        "stimulusStart": 7,
+        "stimulusEnd": 7,
+        "topic": "Indian anti-imperial resistance and civil disobedience",
+        "answer": 3,
+        "unitId": "global-u4",
+        "unitIds": [
+          "global-u4",
+          "global-u8"
+        ]
+      },
+      {
+        "number": 14,
+        "page": 7,
+        "stimulusStart": 7,
+        "stimulusEnd": 7,
+        "topic": "Nationalism and World War I",
+        "answer": 2,
+        "unitId": "global-u5",
+        "unitIds": [
+          "global-u5"
+        ]
+      },
+      {
+        "number": 16,
+        "page": 8,
+        "stimulusStart": 8,
+        "stimulusEnd": 8,
+        "topic": "Effects of World War I",
+        "answer": 4,
+        "unitId": "global-u5",
+        "unitIds": [
+          "global-u5"
+        ]
+      },
+      {
+        "number": 18,
+        "page": 9,
+        "stimulusStart": 9,
+        "stimulusEnd": 9,
+        "topic": "Cold War timeline analysis",
+        "answer": 2,
+        "unitId": "global-u7",
+        "unitIds": [
+          "global-u7"
+        ]
+      },
+      {
+        "number": 20,
+        "page": 10,
+        "stimulusStart": 10,
+        "stimulusEnd": 10,
+        "topic": "South Africa and the end of apartheid",
+        "answer": 1,
+        "unitId": "global-u9",
+        "unitIds": [
+          "global-u9"
+        ]
+      },
+      {
+        "number": 22,
+        "page": 11,
+        "stimulusStart": 11,
+        "stimulusEnd": 11,
+        "topic": "Technology and cultural diffusion",
+        "answer": 2,
+        "unitId": "global-u10",
+        "unitIds": [
+          "global-u10"
+        ]
+      },
+      {
+        "number": 26,
+        "page": 14,
+        "stimulusStart": 14,
+        "stimulusEnd": 14,
+        "topic": "Turkey and secular reform",
+        "answer": 2,
+        "unitId": "global-u8",
+        "unitIds": [
+          "global-u8"
+        ]
+      },
+      {
+        "number": 27,
+        "page": 15,
+        "stimulusStart": 15,
+        "stimulusEnd": 15,
+        "topic": "Internet freedom and censorship",
+        "answer": 2,
+        "unitId": "global-u9",
+        "unitIds": [
+          "global-u9",
+          "global-u10"
+        ]
+      }
+    ],
+    "notes": [
+      "Selected released multiple-choice questions, not comprehensive coverage of every course unit. Use the entire indicated PDF page range, including all stimulus diagrams and text. Constructed responses require the official rating guide and are not included in this auto-scored index.",
+      "unitIds map the actual tested concept to the authored curriculum. An empty unit coverage list is not claimed: unitsWithoutIndexedItems identifies units without a selected released item. Cross-cutting mappings refer to the same official item, not new questions."
+    ],
+    "unitsWithoutIndexedItems": [
+      {
+        "id": "global-u6",
+        "title": "Interwar crisis, World War II & genocide"
+      }
+    ]
+  }
+}
