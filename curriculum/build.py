@@ -33,3 +33,5 @@ Path('public/catalog.json').write_text(json.dumps({'version':3,'state':'NY','sta
 Path('lib/learning-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 Path('curriculum/source-notes.json').write_text(json.dumps({'reviewed':'2026-10-19','basis':standards,'examNotes':{k:v['notes']for k,v in exams.items()},'limitations':['Suggested study order is DECODED’s, not a state-mandated unit order.','Individual performance-expectation alignment and classroom case-study depth need further review.','Exam item index is selected, not every historical paper; source documents remain on NYSED.','Digital models do not replace required classroom investigations or teacher evaluation.']},ensure_ascii=False,indent=2)+'\n')
 print(len(C),'courses;',len(manifest['lessons']),'lessons;',len(manifest['cards']),'term cards;',len(manifest['examItems']),'exam items')
+
+runpy.run_path('curriculum/expand.py',init_globals={'base_courses':C})

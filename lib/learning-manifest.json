@@ -367,6 +367,136 @@
         "ela-u9-l1",
         "ela-u9-l2"
       ]
+    },
+    "math-k": {
+      "units": [
+        "math-k-u1",
+        "math-k-u2"
+      ],
+      "lessons": [
+        "math-k-u1-l1",
+        "math-k-u1-l2",
+        "math-k-u2-l1",
+        "math-k-u2-l2",
+        "math-k-u2-l3"
+      ]
+    },
+    "math-1": {
+      "units": [
+        "math-1-u1",
+        "math-1-u2"
+      ],
+      "lessons": [
+        "math-1-u1-l1",
+        "math-1-u1-l2",
+        "math-1-u2-l1",
+        "math-1-u2-l2",
+        "math-1-u2-l3"
+      ]
+    },
+    "math-2": {
+      "units": [
+        "math-2-u1",
+        "math-2-u2"
+      ],
+      "lessons": [
+        "math-2-u1-l1",
+        "math-2-u1-l2",
+        "math-2-u2-l1",
+        "math-2-u2-l2",
+        "math-2-u2-l3"
+      ]
+    },
+    "math-3": {
+      "units": [
+        "math-3-u1",
+        "math-3-u2"
+      ],
+      "lessons": [
+        "math-3-u1-l1",
+        "math-3-u1-l2",
+        "math-3-u2-l1",
+        "math-3-u2-l2",
+        "math-3-u2-l3"
+      ]
+    },
+    "math-4": {
+      "units": [
+        "math-4-u1",
+        "math-4-u2"
+      ],
+      "lessons": [
+        "math-4-u1-l1",
+        "math-4-u1-l2",
+        "math-4-u2-l1",
+        "math-4-u2-l2",
+        "math-4-u2-l3"
+      ]
+    },
+    "math-5": {
+      "units": [
+        "math-5-u1",
+        "math-5-u2"
+      ],
+      "lessons": [
+        "math-5-u1-l1",
+        "math-5-u1-l2",
+        "math-5-u2-l1",
+        "math-5-u2-l2",
+        "math-5-u2-l3"
+      ]
+    },
+    "math-6": {
+      "units": [
+        "math-6-u1",
+        "math-6-u2"
+      ],
+      "lessons": [
+        "math-6-u1-l1",
+        "math-6-u1-l2",
+        "math-6-u2-l1",
+        "math-6-u2-l2",
+        "math-6-u2-l3"
+      ]
+    },
+    "math-7": {
+      "units": [
+        "math-7-u1",
+        "math-7-u2"
+      ],
+      "lessons": [
+        "math-7-u1-l1",
+        "math-7-u1-l2",
+        "math-7-u2-l1",
+        "math-7-u2-l2",
+        "math-7-u2-l3"
+      ]
+    },
+    "math-8": {
+      "units": [
+        "math-8-u1",
+        "math-8-u2"
+      ],
+      "lessons": [
+        "math-8-u1-l1",
+        "math-8-u1-l2",
+        "math-8-u2-l1",
+        "math-8-u2-l2",
+        "math-8-u2-l3"
+      ]
+    },
+    "precalculus": {
+      "units": [
+        "precalculus-u1",
+        "precalculus-u2"
+      ],
+      "lessons": [
+        "precalculus-u1-l1",
+        "precalculus-u1-l2",
+        "precalculus-u2-l1",
+        "precalculus-u2-l2",
+        "precalculus-u2-l3"
+      ]
     }
   },
   "lessons": [
@@ -586,7 +716,57 @@
     "ela-u8-l2",
     "ela-u8-l3",
     "ela-u9-l1",
-    "ela-u9-l2"
+    "ela-u9-l2",
+    "math-k-u1-l1",
+    "math-k-u1-l2",
+    "math-k-u2-l1",
+    "math-k-u2-l2",
+    "math-k-u2-l3",
+    "math-1-u1-l1",
+    "math-1-u1-l2",
+    "math-1-u2-l1",
+    "math-1-u2-l2",
+    "math-1-u2-l3",
+    "math-2-u1-l1",
+    "math-2-u1-l2",
+    "math-2-u2-l1",
+    "math-2-u2-l2",
+    "math-2-u2-l3",
+    "math-3-u1-l1",
+    "math-3-u1-l2",
+    "math-3-u2-l1",
+    "math-3-u2-l2",
+    "math-3-u2-l3",
+    "math-4-u1-l1",
+    "math-4-u1-l2",
+    "math-4-u2-l1",
+    "math-4-u2-l2",
+    "math-4-u2-l3",
+    "math-5-u1-l1",
+    "math-5-u1-l2",
+    "math-5-u2-l1",
+    "math-5-u2-l2",
+    "math-5-u2-l3",
+    "math-6-u1-l1",
+    "math-6-u1-l2",
+    "math-6-u2-l1",
+    "math-6-u2-l2",
+    "math-6-u2-l3",
+    "math-7-u1-l1",
+    "math-7-u1-l2",
+    "math-7-u2-l1",
+    "math-7-u2-l2",
+    "math-7-u2-l3",
+    "math-8-u1-l1",
+    "math-8-u1-l2",
+    "math-8-u2-l1",
+    "math-8-u2-l2",
+    "math-8-u2-l3",
+    "precalculus-u1-l1",
+    "precalculus-u1-l2",
+    "precalculus-u2-l1",
+    "precalculus-u2-l2",
+    "precalculus-u2-l3"
   ],
   "cards": [
     "algebra1-u1-l1-v0",
@@ -1022,7 +1202,57 @@
     "ela-u9-l1-v0",
     "ela-u9-l1-v1",
     "ela-u9-l2-v0",
-    "ela-u9-l2-v1"
+    "ela-u9-l2-v1",
+    "math-k-u1-l1-v0",
+    "math-k-u1-l2-v0",
+    "math-k-u2-l1-v0",
+    "math-k-u2-l2-v0",
+    "math-k-u2-l3-v0",
+    "math-1-u1-l1-v0",
+    "math-1-u1-l2-v0",
+    "math-1-u2-l1-v0",
+    "math-1-u2-l2-v0",
+    "math-1-u2-l3-v0",
+    "math-2-u1-l1-v0",
+    "math-2-u1-l2-v0",
+    "math-2-u2-l1-v0",
+    "math-2-u2-l2-v0",
+    "math-2-u2-l3-v0",
+    "math-3-u1-l1-v0",
+    "math-3-u1-l2-v0",
+    "math-3-u2-l1-v0",
+    "math-3-u2-l2-v0",
+    "math-3-u2-l3-v0",
+    "math-4-u1-l1-v0",
+    "math-4-u1-l2-v0",
+    "math-4-u2-l1-v0",
+    "math-4-u2-l2-v0",
+    "math-4-u2-l3-v0",
+    "math-5-u1-l1-v0",
+    "math-5-u1-l2-v0",
+    "math-5-u2-l1-v0",
+    "math-5-u2-l2-v0",
+    "math-5-u2-l3-v0",
+    "math-6-u1-l1-v0",
+    "math-6-u1-l2-v0",
+    "math-6-u2-l1-v0",
+    "math-6-u2-l2-v0",
+    "math-6-u2-l3-v0",
+    "math-7-u1-l1-v0",
+    "math-7-u1-l2-v0",
+    "math-7-u2-l1-v0",
+    "math-7-u2-l2-v0",
+    "math-7-u2-l3-v0",
+    "math-8-u1-l1-v0",
+    "math-8-u1-l2-v0",
+    "math-8-u2-l1-v0",
+    "math-8-u2-l2-v0",
+    "math-8-u2-l3-v0",
+    "precalculus-u1-l1-v0",
+    "precalculus-u1-l2-v0",
+    "precalculus-u2-l1-v0",
+    "precalculus-u2-l2-v0",
+    "precalculus-u2-l3-v0"
   ],
   "models": [
     "osmosis",
